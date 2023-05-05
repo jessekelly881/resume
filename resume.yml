@@ -2,14 +2,14 @@ basics:
     name: Jesse Kelly
     label: Lead Full-Stack Engineer
     email: mail@jessekelly.me
-    phone: +1 614 398 0239
+    phone: +16143980239
     image: https://avatars.githubusercontent.com/u/22938931
     summary: | 
         Lead Full-Stack software engineer with 8 years of experience building applications in Typescript, and Python 
         specializing in functional, test driven, software engineering techniques.
     location: 
         city: San Francisco
-        region: California
+        region: CA
         countryCode: US
     profiles:
         - network: Github
@@ -20,17 +20,24 @@ education:
     - institution: The Ohio State University
       url: https://www.osu.edu/
       area: Mathematics 
-      studyType: Bachelor
+      studyType: Bachelors
       courses: 
           - "Mathematical Statistics I,II"
           - "Advanced Logical Theory"
 
 work:
-    - name: Project Discovery
-      url: https://projectdiscovery.io
+    - url: https://projectdiscovery.io
+      company: Project Discovery
       position: Senior Full-Stack Engineer
       startDate: "2021-01-01"
       endDate: "2023-05-01"
+      location: Remote
+
+interests: 
+    - name: SCUBA Diving
+      keywords: 
+          - Open Water Diver
+    - name: Travel
 
 skills:
     - name: Frontend
@@ -40,6 +47,8 @@ skills:
         - CSS
         - Javascript
         - Typescript
+        - React
+        - TailwindCSS
 
     - name: Backend
       level: Senior
@@ -48,10 +57,11 @@ skills:
         - Redis
         - MongoDB
         - Google Cloud
-
+        - Django
+        - Bash
 
 languages: 
     - language: English
       fluency: Native
     - language: Spanish
-      fluency: Fluent(C1)
+      fluency: Fluent/C1

@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:html": "npx resume-cli export --resume resume.yml dist/index.html --theme kendall"
+    "build:html": "npx resume-cli export --resume resume.yml dist/index.html --theme macchiato"
   },
   "keywords": [],
   "author": "Jesse Kelly",
   "license": "ISC",
   "dependencies": {
     "chromium": "^3.0.3",
+    "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-kendall": "^0.2.0",
+    "jsonresume-theme-macchiato": "^1.1.0",
     "puppeteer": "^20.1.1",
     "resume-cli": "^3.0.8",
     "resumed": "^3.0.1"
