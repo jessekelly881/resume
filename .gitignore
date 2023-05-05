@@ -2,3 +2,4 @@ node_modules/
 resume.html
 public/
 .DS_Store
+dist/
