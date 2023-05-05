@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+        "fileMatch": [
+            "./resume.yml"
+        ],
+        "url": "https://github.com/jsonresume/resume-schema/blob/master/schema.json"
+    }
+    ]
+}
