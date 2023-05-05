@@ -22,8 +22,8 @@ education:
       area: Mathematics 
       studyType: Bachelor
       courses: 
-          - "Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Interval, Regression, and ANOVA testing. Used R for data analysis"
-          - "Advanced Logical Theory: Advanced course covering the mathematical foundations of computation including complete proofs of Gödel’s Incompleteness Theorems"
+          - "Mathematical Statistics I,II"
+          - "Advanced Logical Theory"
 
 work:
     - name: Project Discovery
@@ -33,13 +33,21 @@ work:
       endDate: "2023-05-01"
 
 skills:
-    name: Web Development
-    level: Master
-    keywords:
+    - name: Frontend
+      level: Senior
+      keywords:
         - HTML
         - CSS
         - Javascript
         - Typescript
+
+    - name: Backend
+      level: Senior
+      keywords:
+        - SQL
+        - Redis
+        - MongoDB
+        - Google Cloud
 
 
 languages: 
