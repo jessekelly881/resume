@@ -26,12 +26,17 @@ education:
           - "Advanced Logical Theory"
 
 work:
-    - url: https://projectdiscovery.io
-      company: Project Discovery
+    - company: Project Discovery
+      url: https://projectdiscovery.io
       position: Senior Full-Stack Engineer
       startDate: "2021-01-01"
       endDate: "2023-05-01"
       location: Remote
+
+    - company: Appuntos
+      position: Lead Full-Stack Engineer
+      highlights: 
+          - Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express
 
 interests: 
     - name: SCUBA Diving
@@ -43,12 +48,17 @@ skills:
     - name: Frontend
       level: Senior
       keywords:
-        - HTML
-        - CSS
+        - HTML5
+        - CSS3
+        - SASS
         - Javascript
         - Typescript
         - React
         - TailwindCSS
+        - Angular
+        - Ionic
+        - Cordova
+        - Capacitor
 
     - name: Backend
       level: Senior
@@ -56,9 +66,32 @@ skills:
         - SQL
         - Redis
         - MongoDB
-        - Google Cloud
         - Django
         - Bash
+        - Flask
+
+    - name: DevOps
+      level: Senior
+      keywords:
+        - Git
+        - Docker
+        - Hasura
+        - Google Cloud
+        - AWS
+
+    - name: Systems
+      level: Senior
+      keywords:
+        - Linux
+        - Bash
+        - Make
+        - AWK
+
+    - name: Misc
+      level: Senior
+      keywords:
+        - Emacs Lisp
+        - Latex
 
 languages: 
     - language: English
