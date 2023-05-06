@@ -4,6 +4,7 @@ specifiers:
   chromium: ^3.0.3
   jsonresume-theme-elegant: ^1.16.1
   jsonresume-theme-full: ^0.0.4
+  jsonresume-theme-full-ext: ^1.2.0
   jsonresume-theme-kendall: ^0.2.0
   jsonresume-theme-macchiato: ^1.1.0
   jsonresume-theme-onepage: ^0.0.3
@@ -17,6 +18,7 @@ dependencies:
   chromium: 3.0.3
   jsonresume-theme-elegant: 1.16.1
   jsonresume-theme-full: 0.0.4
+  jsonresume-theme-full-ext: 1.2.0
   jsonresume-theme-kendall: 0.2.0
   jsonresume-theme-macchiato: 1.1.0
   jsonresume-theme-onepage: 0.0.3
@@ -2455,6 +2457,12 @@ packages:
       striptags: 3.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /jsonresume-theme-full-ext/1.2.0:
+    resolution: {integrity: sha512-dK+kqTCFmFSxmBjKA5XUoAFIMA18wadv74Ie+CrnfRrW8Lt5wkeEcglOVLKvb9JcFWuUfLsTGo6zV1JZhs/IZQ==}
+    dependencies:
+      handlebars: 2.0.0
     dev: false
 
   /jsonresume-theme-full/0.0.4:

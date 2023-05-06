@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:html": "npx resume-cli export --resume resume.yml dist/index.html --theme full",
-    "build:pdf": "npx resume-cli export --resume resume.yml dist/resume.pdf --theme full"
+    "build:html": "npx resume-cli export --resume resume.yml dist/index.html --theme full-ext",
+    "build:pdf": "npx resume-cli export --resume resume.yml dist/resume.pdf --theme full-ext"
   },
   "keywords": [],
   "author": "Jesse Kelly",
@@ -16,6 +16,7 @@
     "chromium": "^3.0.3",
     "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-full": "^0.0.4",
+    "jsonresume-theme-full-ext": "^1.2.0",
     "jsonresume-theme-kendall": "^0.2.0",
     "jsonresume-theme-macchiato": "^1.1.0",
     "jsonresume-theme-onepage": "^0.0.3",
