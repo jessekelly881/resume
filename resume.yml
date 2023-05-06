@@ -15,6 +15,9 @@ basics:
         - network: Github
           username: jessekelly881
           url: https://github.com/jessekelly881
+        - network: Linkedin
+          username: jesse-kelly-5287a8199
+          url: https://www.linkedin.com/in/jesse-kelly-5287a8199/
 
 education:
     - institution: The Ohio State University
