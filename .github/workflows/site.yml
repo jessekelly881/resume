@@ -37,6 +37,7 @@ jobs:
           pnpm install
           mkdir dist
           pnpm run build:html
+          pnpm run build:pdf
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
