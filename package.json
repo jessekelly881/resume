@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:html": "npx resume-cli export --resume resume.yml dist/index.html --theme macchiato",
-    "build:pdf": "npx resume-cli export --resume resume.yml resume.pdf --theme macchiato"
+    "build:pdf": "npx resume-cli export --resume resume.yml dist/resume.pdf --theme macchiato"
   },
   "keywords": [],
   "author": "Jesse Kelly",

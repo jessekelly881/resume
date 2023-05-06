@@ -42,7 +42,7 @@ jobs:
       - name: Resume
         uses: actions/upload-artifact@v3
         with:
-          path: resume.pdf
+          path: dist/resume.pdf
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
