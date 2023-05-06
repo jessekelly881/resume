@@ -39,6 +39,11 @@ jobs:
           pnpm run build:html
           pnpm run build:pdf
 
+      - name: Resume
+        uses: actions/upload-artifact@v3
+        with:
+          path: resume.pdf
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
