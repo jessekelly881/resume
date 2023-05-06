@@ -3,8 +3,11 @@ lockfileVersion: 5.4
 specifiers:
   chromium: ^3.0.3
   jsonresume-theme-elegant: ^1.16.1
+  jsonresume-theme-full: ^0.0.4
   jsonresume-theme-kendall: ^0.2.0
   jsonresume-theme-macchiato: ^1.1.0
+  jsonresume-theme-onepage: ^0.0.3
+  jsonresume-theme-short: ^0.1.7
   puppeteer: ^20.1.1
   puppeteer-cli: ^1.5.1
   resume-cli: ^3.0.8
@@ -13,8 +16,11 @@ specifiers:
 dependencies:
   chromium: 3.0.3
   jsonresume-theme-elegant: 1.16.1
+  jsonresume-theme-full: 0.0.4
   jsonresume-theme-kendall: 0.2.0
   jsonresume-theme-macchiato: 1.1.0
+  jsonresume-theme-onepage: 0.0.3
+  jsonresume-theme-short: 0.1.7
   puppeteer: 20.1.1
   puppeteer-cli: 1.5.1
   resume-cli: 3.0.8
@@ -272,6 +278,12 @@ packages:
       repeat-string: 1.6.1
     dev: false
 
+  /amdefine/1.0.1:
+    resolution: {integrity: sha512-S2Hw0TtNkMJhIabBwIojKL9YHO5T0n5eNqWJ7Lrlel/zDbftQpxpapi8tZs3X1HWa+u+QeydGmzzNU0m09+Rcg==}
+    engines: {node: '>=0.4.2'}
+    dev: false
+    optional: true
+
   /ansi-regex/3.0.1:
     resolution: {integrity: sha512-+O9Jct8wf++lXxxFc4hc8LsjaSq0HFzzL7cVsw8pRDIPdjKD2mT4ytDZlLuSBZ4cLKZFXIrMGO7DbQCtMJJMKw==}
     engines: {node: '>=4'}
@@ -406,6 +418,11 @@ packages:
   /async-limiter/1.0.1:
     resolution: {integrity: sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==}
     dev: false
+
+  /async/0.2.10:
+    resolution: {integrity: sha512-eAkdoKxU6/LkKDBzLpT+t6Ff5EtfSF4wx1WfJiPEEV7WNLnDaRXk0oVysiEPm262roaachGexwUv94WhSgN5TQ==}
+    dev: false
+    optional: true
 
   /async/2.6.4:
     resolution: {integrity: sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==}
@@ -1023,6 +1040,15 @@ packages:
       node-fetch: 2.6.7
     transitivePeerDependencies:
       - encoding
+    dev: false
+
+  /css/2.2.4:
+    resolution: {integrity: sha512-oUnjmWpy0niI3x/mPL8dVEI1l7MnG3+HHyRPHf+YFSbK+svOhXpmSOcDURUh2aOCgl2grzrOPt1nHLuCVFULLw==}
+    dependencies:
+      inherits: 2.0.4
+      source-map: 0.6.1
+      source-map-resolve: 0.5.3
+      urix: 0.1.0
     dev: false
 
   /d3-dsv/1.2.0:
@@ -1768,6 +1794,16 @@ packages:
       require-glob: 3.2.0
     dev: false
 
+  /handlebars/2.0.0:
+    resolution: {integrity: sha512-OdfkaA0M8qGD5EJBkMw3TpguSWl6lz94jdyVmYs5e4TpwepZJ35Y5XlchsIwcN7NP/yzNa3MJYd/dRTO7Nf/fg==}
+    engines: {node: '>=0.4.7'}
+    hasBin: true
+    dependencies:
+      optimist: 0.3.7
+    optionalDependencies:
+      uglify-js: 2.3.6
+    dev: false
+
   /handlebars/4.7.7:
     resolution: {integrity: sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==}
     engines: {node: '>=0.4.7'}
@@ -2421,6 +2457,12 @@ packages:
       - supports-color
     dev: false
 
+  /jsonresume-theme-full/0.0.4:
+    resolution: {integrity: sha512-C5Mr7Ttao9H9bff77Z8UT4XIYPnjHSjpQXZSMupOVXpqaQeOj+zdrh+KxRYE7J+JJUWrolFINaeNXyCN8+pZgg==}
+    dependencies:
+      handlebars: 2.0.0
+    dev: false
+
   /jsonresume-theme-kendall/0.2.0:
     resolution: {integrity: sha512-K925MVtKXd2W8XbnR5/MzgO6c7wObyTPdjics9xmMDUW3xK3051IOIIVEyv+lIseEW3lOmm2yun9gLtJwVr1mA==}
     dependencies:
@@ -2436,6 +2478,19 @@ packages:
       handlebars: 4.7.7
       handlebars-wax: 6.1.0
       moment: 2.29.4
+    dev: false
+
+  /jsonresume-theme-onepage/0.0.3:
+    resolution: {integrity: sha512-hfiSUbHHoWJkRxcYe5/bSZxZRmg3DAIBFgxnGOZXFzuytqxpzb9sTfI5fQ+0FNAxfsAcYVOFw0tMpzD6QNO53Q==}
+    dependencies:
+      css: 2.2.4
+      handlebars: 2.0.0
+    dev: false
+
+  /jsonresume-theme-short/0.1.7:
+    resolution: {integrity: sha512-ZEuXWAAh9T0nPrCjJLlGUL8QbCYJAEfF3XheQ2elMGolDZpSz1nY5TPJxoMSyIBurKNs9gdQFh+cD42wySH5gg==}
+    dependencies:
+      handlebars: 2.0.0
     dev: false
 
   /jsonresume-themeutils/1.4.3:
@@ -2911,6 +2966,12 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       is-wsl: 1.1.0
+    dev: false
+
+  /optimist/0.3.7:
+    resolution: {integrity: sha512-TCx0dXQzVtSCg2OgY/bO9hjM9cV4XYx09TVK+s3+FhkjT6LovsLe+pPMzpWf+6yXK/hUizs2gUoTw3jHM0VaTQ==}
+    dependencies:
+      wordwrap: 0.0.2
     dev: false
 
   /os-tmpdir/1.0.2:
@@ -3809,6 +3870,14 @@ packages:
     deprecated: See https://github.com/lydell/source-map-url#deprecated
     dev: false
 
+  /source-map/0.1.43:
+    resolution: {integrity: sha512-VtCvB9SIQhk3aF6h+N85EaqIaBFIAfZ9Cu+NJHHVvc8BbEcnvDcFw6sqQ2dQrT6SlOrZq3tIvyD9+EGq/lJryQ==}
+    engines: {node: '>=0.8.0'}
+    dependencies:
+      amdefine: 1.0.1
+    dev: false
+    optional: true
+
   /source-map/0.5.7:
     resolution: {integrity: sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==}
     engines: {node: '>=0.10.0'}
@@ -4148,6 +4217,18 @@ packages:
   /uc.micro/1.0.6:
     resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
     dev: false
+
+  /uglify-js/2.3.6:
+    resolution: {integrity: sha512-T2LWWydxf5+Btpb0S/Gg/yKFmYjnX9jtQ4mdN9YRq73BhN21EhU0Dvw3wYDLqd3TooGUJlCKf3Gfyjjy/RTcWA==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      async: 0.2.10
+      optimist: 0.3.7
+      source-map: 0.1.43
+    dev: false
+    optional: true
 
   /uglify-js/2.8.29:
     resolution: {integrity: sha512-qLq/4y2pjcU3vhlhseXGGJ7VbFO4pBANu0kwl8VCa9KEI0V8VfZIx2Fy3w01iSTA/pGwKZSmu/+I4etLNDdt5w==}

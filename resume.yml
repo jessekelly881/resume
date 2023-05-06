@@ -5,8 +5,7 @@ basics:
     phone: +16143980239
     image: https://avatars.githubusercontent.com/u/22938931
     summary: | 
-        Lead Full-Stack software engineer with 8 years of experience building applications in Typescript, and Python 
-        specializing in functional, test driven, software engineering techniques.
+        Lead Full-Stack software engineer with 8 years of experience building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.
     location: 
         city: San Francisco
         region: CA
@@ -29,23 +28,40 @@ education:
           - "Advanced Logical Theory"
 
 work:
-    - company: Project Discovery
+    - name: Project Discovery
+      company: Project Discovery
       url: https://projectdiscovery.io
       position: Senior Full-Stack Engineer
-      startDate: "2021-01-01"
-      endDate: "2023-05-01"
+      startDate: "2021-05-01"
+      endDate: "2023-04-01"
       location: Remote
 
-    - company: Appuntos
+    - name: Appuntos
+      company: Appuntos
       position: Lead Full-Stack Engineer
       highlights: 
           - Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express
+      startDate: "2019-03-01"
+      endDate: "2020-09-01"
 
 interests: 
     - name: SCUBA Diving
       keywords: 
           - Open Water Diver
     - name: Travel
+      keywords: 
+          - Mexico
+          - Guatemala
+          - Colombia
+          - Peru
+          - Spain
+          - France
+          - Germany
+          - Belgium
+          - Czech Republic
+          - Netherlands
+          - Switzerland
+          - Italy
 
 skills:
     - name: Frontend
