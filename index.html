@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	<title>Jesse Kelly  - Lead Full-Stack Engineer</title>
+	<title>Jesse Kelly   - Lead Full-Stack Engineer</title>
 	<style>
   	:root {
   --accent:#BC1B39;
@@ -92,38 +92,57 @@ section.heading header h2::after {
 section.heading header .contact {
   display: flex;
   flex-direction: column;
-  padding-bottom: var(--spacing);
+  /* padding-bottom: var(--spacing); */
 }
-@media (min-width: 567px) {
+
+section.heading header .header-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (max-width: 567px) {
+  section.heading header .header-container {
+    flex-direction: column;
+  }
+}
+@media print {
+  section.heading header .header-container {
+    flex-direction: row;
+  }
+}
+
+/* @media (min-width: 567px) {
   section.heading header .contact {
     flex-direction: row;
     justify-content: space-between;
   }
-}
+} */
 section.heading header address {
   font-size: 90%;
   font-style: normal;
-  padding-bottom: var(--spacing);
+  /* padding-bottom: var(--spacing); */
 }
 section.heading .profiles {
   display: flex;
   flex-direction: column;
   padding-bottom: var(--spacing);
 }
-@media (min-width: 567px) {
+
+/* @media (min-width: 567px) { */
   section.heading .profiles {
     flex-direction: row;
     justify-content: start;
   }
-}
+/* } */
 section.heading .profiles .profile.print {
   display: none;
 }
-@media print {
+/* @media print {
   section.heading .profiles .profile.print {
     display: block;
   }
-}
+} */
 section.heading .profiles strong {
   margin: 0 var(--spacing-small) 0 0;
 }
@@ -191,7 +210,7 @@ section.skills .item .name {
   white-space: nowrap;
 }
 section.skills .item .keywords {
-  display: inline-block;
+  display: inline;
   font-size: 90%;
   vertical-align: top;
 }
@@ -206,7 +225,7 @@ section.projects .item strong {
   color: var(--copy-color-light);
   font-weight: 600;
   display: inline-block;
-  padding-top: var(--spacing);
+  /* padding-top: var(--spacing); */
 }
 section.awards .item .title {
   font-weight: 600;
@@ -301,11 +320,11 @@ section.experience .item, section.volunteering .item, section.projects .item, se
   page-break-inside: avoid;
 }
 
-@media print {
+/* @media print {
   section.heading .profiles .profile:not(.print), section.publications .item .website {
     display: none;
   }
-}
+} */
 
 section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
   align-items: baseline;
@@ -313,6 +332,12 @@ section.experience .item header .subhead, section.volunteering .item header .sub
   justify-content: space-between;
 }
 @media (min-width: 567px) {
+  section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
+    flex-direction: row;
+  }
+}
+
+@media print {
   section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
     flex-direction: row;
   }
@@ -338,20 +363,23 @@ section.experience .item header .subhead, section.volunteering .item header .sub
     <div id="resume">
       <section id="heading" class="heading">
         <header>
-          <h1>
-            Jesse Kelly
-          </h1>
-          <h2>Lead Full-Stack Engineer</h2>
-          <div class="summary"><p>Lead Full-Stack software engineer with 8 years of experience building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.</p></div>
-          <div class="contact">
-            <span class="contact-detail"><a href="mailto:mail@jessekelly.me">mail@jessekelly.me</a></span>
-            <span class="contact-detail">16143980239</span>
+          <div class="header-container">
+            <div>
+              <h1>Jesse Kelly</h1>
+              <h2>Lead Full-Stack Engineer</h2>
+            </div>
+            <div class="contact">
+              <span class="contact-detail"><a href="mailto:mail@jessekelly.me">mail@jessekelly.me</a></span>
+              <span class="contact-detail">16143980239</span>
+              <address>
+                <span class="address-detail">San Francisco,</span>
+                <span class="address-detail">CA</span>
+                <span class="address-detail">US</span>
+              </address>
+            </div>
           </div>
-          <address>
-            <span class="address-detail">San Francisco,</span>
-            <span class="address-detail">CA</span>
-            <span class="address-detail">US</span>
-          </address>
+          <div class="summary"><p>Lead Full-Stack software engineer with 8 years of experience building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.</p></div>
+          
         </header>
       
         <div class="profiles">
@@ -378,32 +406,6 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             </span>
           </div>
         </div>
-      </section>
-      <section id="experience" class="experience">
-        <section class="item">
-          <h2>Experience</h2>
-          <header>
-            <h3 class="name"><a href="https://projectdiscovery.io" target="external">Project Discovery</a></h3>
-            <div class="subhead">
-            <span class="position">Senior Full-Stack Engineer</span>
-            <small class="dates">May 2021
-             - Apr 2023</small>
-            </div>
-          </header>
-        </section>
-        <section class="item">
-          <header>
-            <h3 class="name">Appuntos</h3>
-            <div class="subhead">
-            <span class="position">Lead Full-Stack Engineer</span>
-            <small class="dates">Mar 2019
-             - Sep 2020</small>
-            </div>
-          </header>
-          <ul class="highlights">
-            <li>Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express</li>
-          </ul>
-        </section>
       </section>
       <section id="skills" class="skills">
         <div class="item">
@@ -461,6 +463,32 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           </div>
         </div>
       </section>
+      <section id="experience" class="experience">
+        <section class="item">
+          <h2>Experience</h2>
+          <header>
+            <h3 class="name"><a href="https://projectdiscovery.io" target="external">Project Discovery</a></h3>
+            <div class="subhead">
+            <span class="position">Senior Full-Stack Engineer</span>
+            <small class="dates">May 2021
+             - Apr 2023</small>
+            </div>
+          </header>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name">Appuntos</h3>
+            <div class="subhead">
+            <span class="position">Lead Full-Stack Engineer</span>
+            <small class="dates">Mar 2019
+             - Sep 2020</small>
+            </div>
+          </header>
+          <ul class="highlights">
+            <li>Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express</li>
+          </ul>
+        </section>
+      </section>
       <section id="education" class="education">
         <div class="item">
           <h2>Education</h2>
@@ -500,13 +528,15 @@ section.experience .item header .subhead, section.volunteering .item header .sub
       <section id="interests" class="interests">
         <div class="item">
           <h2>Interests</h2>
-          <span class="name">SCUBA Diving:</span>
+          <span class="name">SCUBA Diving</span>
+          <span class="name">:</span>
           <span class="keywords">
             <span>Open Water Diver</span>
           </span>
         </div>
         <div class="item">
-          <span class="name">Travel:</span>
+          <span class="name">Travel</span>
+          <span class="name">:</span>
           <span class="keywords">
             <span>Mexico</span>,
             <span>Guatemala</span>,
