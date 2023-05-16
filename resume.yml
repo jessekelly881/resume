@@ -24,9 +24,12 @@ education:
       url: https://www.osu.edu/
       area: Mathematics 
       studyType: Bachelors
+      startDate: "2014-08-01"
+      endDate: "2017-05-01"
       courses: 
-          - "Mathematical Statistics I,II"
-          - "Advanced Logical Theory"
+          - Mathematical Statistics I,II
+          - Advanced Logical Theory (w/ Proof of Incompleteness Theorems)
+          - Calculus I, II, Multivariable Calculus , Differencial Equation, Dynamical Systems
 
 work:
     - name: Project Discovery
@@ -35,12 +38,30 @@ work:
       position: Senior Full-Stack Engineer
       startDate: "2021-05-01"
       endDate: "2023-04-01"
-      location: Remote
+      location: San Francisco, CA (Remote)
+      highlights: 
+        - Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.
+        - Improved website and application reliability, security, and user experience company wide by leading the company to adopt typescript(over pure js), test driven development techniques, and functional programming.
+        - Implemented several successful, and user impacting, applications using Typescript, Reactjs, fp-ts, effect-ts, Jest, and Google Cloud.
+
+    - name: Glitzi 
+      position: Senior Full-Stack Engineer (Freelance)
+      url: https://glitzi.com.mx/
+      location: Mexico City, MX
+      endDate: "2021-05-01"
+      startDate: "2020-10-01"
+      summary: Worked with Glitzi as a freelancer along with 3 other engineers to launch a telemedicine platform based targeting the Mexican market. 
+      highlights: 
+        - Worked with a team of 4 engineers to implement a security critical, HIPPA certified, application.
+        - Lead the development of the frontend of the application. Implemented user to user payments using stripe as well as secure user to user file sharing and video calls.
 
     - name: Appuntos
       company: Appuntos
+      url: https://www.linkedin.com/company/appuntos/about/
       position: Lead Full-Stack Engineer
+      location: Mexico City, MX
       highlights: 
+          - Maintained legacy Django backend and Angular android/ios application while adding new features, improving test coverage, and improving code quality.
           - Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express
       startDate: "2019-03-01"
       endDate: "2020-09-01"
@@ -83,12 +104,12 @@ skills:
     - name: Backend
       level: Senior
       keywords:
+        - Express
+        - Nextjs
         - SQL
         - Redis
         - MongoDB
         - Django
-        - Bash
-        - Flask
 
     - name: DevOps
       level: Senior
@@ -98,6 +119,7 @@ skills:
         - Hasura
         - Google Cloud
         - AWS
+        - Netlify Lambda
 
     - name: Systems
       level: Senior
