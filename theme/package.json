@@ -1,0 +1,33 @@
+{
+  "name": "jsonresume-theme-full-ext",
+  "version": "1.2.0",
+  "description": "Simple to the point theme for JSON Resume, based on the full theme",
+  "author": "Prasanna Kumar Gollangi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pgollangi/jsonresume-theme-full-ext"
+  },
+  "bugs": {
+    "url": "https://github.com/pgollangi/jsonresume-theme-full-ext/issues"
+  },
+  "homepage": "https://github.com/pgollangi/jsonresume-theme-full-ext#readme",
+  "keywords": [
+    "jsonresume",
+    "resume",
+    "full theme support",
+    "accent color",
+    "developer friendly",
+    "full-ext theme support"
+  ],
+  "scripts": {
+    "style": "sass dev/style.sass dev/style.css --watch",
+    "dev": "npx livereloadx -s -p 35729 dev"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  },
+  "devDependencies": {
+    "sass": "^1.44.0"
+  }
+}
