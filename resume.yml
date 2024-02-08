@@ -64,58 +64,48 @@ work:
 
 interests: 
     - name: SCUBA Diving
-      keywords: 
-          - Open Water Diver
     - name: Travel
-      keywords: 
-          - Mexico
-          - Guatemala
-          - Colombia
-          - Peru
-          - Spain
-          - France
-          - Germany
-          - Belgium
-          - Czech Republic
-          - Netherlands
-          - Switzerland
-          - Italy
 
 skills:
     - name: Frontend
-      level: Senior
+      level: Expert
       keywords:
+        - Typescript
+        - Javascript
+        - React
+        - Angular
+        - TailwindCSS
+        - Stylex
+        - Tauri
+        - Cordova
+        - Ionic
+        - Capacitor
         - HTML5
         - CSS3
         - SASS
-        - Javascript
-        - Typescript
-        - React
-        - TailwindCSS
-        - Angular
-        - Ionic
-        - Cordova
-        - Capacitor
 
     - name: Backend
-      level: Senior
+      level: Expert
       keywords:
+        - SQL
+        - Python
         - Express
         - Nextjs
-        - SQL
         - Redis
         - MongoDB
         - Django
 
     - name: DevOps
-      level: Senior
+      level: Expert
       keywords:
+        - AWS
+        - Google Cloud
         - Git
         - Docker
+        - Kubernetes
         - Hasura
-        - Google Cloud
-        - AWS
-        - Netlify Lambda
+        - Vercel
+        - Netlify
 
     - name: Systems
       level: Senior
@@ -128,8 +118,8 @@ skills:
     - name: Misc
       level: Senior
       keywords:
-        - Emacs Lisp
-        - Latex
+        - Lisp
+        - LaTeX
 
 languages: 
     - language: English
