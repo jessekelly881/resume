@@ -248,10 +248,7 @@ section.languages .language-item .fluency {
 }
 
 section.interests .item .name {
-  display: inline-block;
   font-size: 90%;
-  font-weight: 600;
-  margin: 0 var(--spacing) 0 0;
   text-transform: uppercase;
   vertical-align: top;
   white-space: nowrap;
@@ -268,9 +265,10 @@ section.references .item .name {
 
 section h2 {
   max-width: min-content;
+  margin: 0 0 0.75rem 0;
   white-space: nowrap;
   color: var(--accent);
-  font-size: 135%;
+  font-size: 115%;
   font-weight: 400;
   position: relative;
   text-transform: uppercase;
