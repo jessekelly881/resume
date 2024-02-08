@@ -1,3 +1,4 @@
+$schema: "https://github.com/jsonresume/resume-schema/blob/master/schema.json"
 basics:
     name: Jesse Kelly
     label: Lead Full-Stack Engineer
@@ -41,21 +42,21 @@ work:
         - Implemented several successful, and user impacting, applications using Typescript, Reactjs, fp-ts, effect-ts, Jest, and Google Cloud.
 
     - name: Glitzi 
-      position: Senior Full-Stack Engineer (Freelance)
+      position: Senior Full-Stack Engineer 
       url: https://glitzi.com.mx/
-      location: Mexico City, MX
+      location: Mexico City, MX (Hybrid Remote)
       endDate: "2021-05-01"
       startDate: "2020-10-01"
-      summary: Worked with Glitzi as a freelancer along with 3 other engineers to launch a telemedicine platform based targeting the Mexican market. 
+      summary: Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market. 
       highlights: 
-        - Worked with a team of 4 engineers to implement a security critical, HIPAA certified, application.
+        - Implemented security critical, HIPAA compliant, backend code in *Python*, *Django*, and *SQL* for handling sensitive patient medical data.
         - Lead the development of the frontend of the application. Implemented user to user payments using stripe as well as secure user to user file sharing and video calls.
 
     - name: Appuntos
       company: Appuntos
       url: https://www.linkedin.com/company/appuntos/about/
       position: Lead Full-Stack Engineer
-      location: Mexico City, MX
+      location: Mexico City, MX (Onsite)
       highlights: 
           - Maintained legacy Django backend and Angular android/ios application while adding new features, improving test coverage, and improving code quality.
           - Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express
@@ -125,4 +126,4 @@ languages:
     - language: English
       fluency: Native
     - language: Spanish
-      fluency: Fluent/C1
+      fluency: Fluent(C1)
