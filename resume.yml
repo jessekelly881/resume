@@ -95,28 +95,17 @@ skills:
     - name: DevOps
       level: Expert
       keywords:
+        - Linux
         - AWS
         - Google Cloud
-        - Git
+        - AWK
         - Docker
         - Kubernetes
         - Hasura
         - Vercel
         - Netlify
-
-    - name: Systems
-      level: Senior
-      keywords:
-        - Linux
+        - Git
         - Bash
-        - Make
-        - AWK
-
-    - name: Misc
-      level: Senior
-      keywords:
-        - Lisp
-        - LaTeX
 
 languages: 
     - language: English
