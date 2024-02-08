@@ -29,8 +29,8 @@ work:
       company: ProjectDiscovery.io
       url: https://projectdiscovery.io
       position: Lead Full Stack Engineer
-      startDate: "2021-06-01"
-      endDate: "2023-07-01"
+      startDate: "2021-05-01"
+      endDate: "2023-06-01"
       location: San Francisco, CA (Remote)
       highlights: 
         - Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.
@@ -41,8 +41,8 @@ work:
       position: Senior Full-Stack Engineer 
       url: https://glitzi.com.mx/
       location: Mexico City, MX (Hybrid Remote)
-      endDate: "2021-06-01"
-      startDate: "2020-10-01"
+      endDate: "2021-05-01"
+      startDate: "2020-09-01"
       summary: Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market. 
       highlights: 
         - Implemented security critical, HIPAA compliant, backend code in Python, Django, and SQL for handling sensitive patient medical data.
@@ -53,8 +53,8 @@ work:
       url: https://www.reworth.app
       position: Senior Full Stack Engineer
       location: Mexico City, MX (Onsite)
-      startDate: "2020-06-01"
-      endDate: "2020-10-01"
+      startDate: "2020-05-01"
+      endDate: "2020-09-01"
       highlights: 
         - Developed a full stack React, Typescript, Python and Django application for working with highly sensitive patient medical information in HIPAA compliant manner.
 
@@ -66,8 +66,8 @@ work:
       highlights: 
           - Maintained legacy Django backend and Angular android/ios application while adding new features, improving test coverage, and improving code quality.
           - Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express
-      startDate: "2019-04-01"
-      endDate: "2020-06-01"
+      startDate: "2019-03-01"
+      endDate: "2020-05-01"
 
 interests: 
     - name: SCUBA Diving
