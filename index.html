@@ -6,8 +6,8 @@
 	<title>Jesse Kelly   - Lead Full-Stack Engineer</title>
 	<style>
   	:root {
-  --accent:#BC1B39;
-  --anchor-color: #2C85B1;
+  --accent: #8a0303;
+  --anchor-color: #000000;
   --blue:#2C85B1;
   --copy-color-light: #666666;
   --copy-color: #242424;
@@ -17,13 +17,11 @@
   --base-font-size: 12pt;
   --spacing-double: 1rem;
   --spacing-small: .1rem;
-  --spacing: .5rem;
+  --spacing: .35rem;
 }
 @media (min-width: 567px) {
   :root {
     --spacing-double: 1.5rem;
-    --spacing-small: .25rem;
-    --spacing: .75rem;
   }
 }
 @media print {
@@ -32,6 +30,9 @@
     --base-font-size: 9pt;
     --copy-color-light: #000000;
     --copy-color: #000000;
+
+    /* Reduce spacing in pdf */
+    --spacing-double: 0.875rem; 
   }
 }
 
@@ -63,7 +64,7 @@ ul {
 }
 
 section {
-  margin: var(--spacing) 0 var(--spacing-double);
+  margin: 0;
 }
 
 blockquote {
@@ -76,9 +77,13 @@ blockquote {
   max-width: 760px;
 }
 
+section.heading {
+  margin: 0
+}
+
 section.heading header h1 {
-  font-size: 180%;
-  font-weight: 300;
+  font-size: 200%;
+  font-weight: 600;
   margin: 0;
 }
 section.heading header h2 {
@@ -162,7 +167,7 @@ section.experience .item header a,
 section.experience .item header h3 {
   color: var(--copy-color);
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
 }
 @media (max-width: 566px) {
@@ -238,18 +243,9 @@ section.languages .language-item {
   display: flex;
   justify-content: start;
 }
-section.languages .language-item:first-child {
-  margin-top: var(--spacing);
-}
-section.languages .language-item:last-child {
-  margin-bottom: var(--spacing);
-}
-section.languages .language-item .language {
+.languages .language-item .language {
   display: inline-block;
-  font-size: 90%;
-  font-weight: 600;
-  margin: 0 var(--spacing) 0 0;
-  text-transform: uppercase;
+  font-weight: bold;
   vertical-align: top;
   white-space: nowrap;
 }
@@ -258,12 +254,6 @@ section.languages .language-item .fluency {
   font-style: italic;
 }
 
-section.interests .item {
-  margin-bottom: var(--spacing);
-}
-section.interests .item:last-child {
-  margin-bottom: var(--spacing);
-}
 section.interests .item .name {
   display: inline-block;
   font-size: 90%;
@@ -284,29 +274,34 @@ section.references .item .name {
 }
 
 section h2 {
+  max-width: min-content;
+  white-space: nowrap;
   color: var(--accent);
   font-size: 135%;
   font-weight: 400;
-  margin: 0 0 var(--spacing-double);
   position: relative;
   text-transform: uppercase;
 }
 section h2::after {
   background: var(--accent);
-  bottom: -10px;
+  bottom: -5px;
   content: " ";
   display: inline-block;
-  height: 3px;
+  height: 2px;
   left: 0;
   position: absolute;
-  width: 2.5rem;
+  width: 75%;
 }
 section header h3 {
   margin: 0;
   font-weight: 600;
 }
 
-section.experience .item .highlights, section.volunteering .highlights, section.projects .highlights,
+#experience h3 {
+  font-weight: bold;
+}
+
+section.experience .highlights, section.volunteering .highlights, section.projects .highlights,
 section.projects .keywords,
 section.projects .roles, section.education .item .courses {
   font-size: 90%;
@@ -351,6 +346,12 @@ section.experience .item header .subhead, section.volunteering .item header .sub
   }
 }
 
+#languages {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
 	</style>
 	<style media="print">
 		body { font-size: 12px; }
@@ -374,7 +375,7 @@ section.experience .item header .subhead, section.volunteering .item header .sub
               <span class="contact-detail"><a href="https://jessekelly.me" target="external">https://jessekelly.me</a></span>
             </div>
           </div>
-          <div class="summary"><p>Lead Full-Stack software engineer with <strong>8 years of experience</strong> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.</p></div>
+          <!-- <div class="summary"><p>Lead Full-Stack software engineer with <strong>8 years of experience</strong> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.</p></div> -->
           
         </header>
       
@@ -402,6 +403,69 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             </span>
           </div>
         </div>
+      </section>
+      
+      <div id="languages" class="languages">
+        <div class="item">
+          <div class="language-item">
+            <span class="language">English:</span>
+            <span class="fluency">Native</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="language-item">
+            <span class="language">Spanish:</span>
+            <span class="fluency">Fluent(C1)</span>
+          </div>
+        </div>
+      </div>
+      <br />
+      <section id="experience" class="experience">
+        <section class="item">
+          <h2>Professional Experience</h2>
+          <header>
+            <h3 class="name"><a href="https://projectdiscovery.io" target="external">Project Discovery</a></h3>
+            <div class="subhead">
+            <span class="position">Senior Full-Stack Engineer</span>
+            <small class="dates">May 2021
+             - Apr 2023</small>
+            </div>
+          </header>
+          <ul class="highlights">
+            <li>Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.</li>
+            <li>Improved website and application reliability, security, and user experience company wide by leading the company to adopt typescript(over pure js), test driven development techniques, and functional programming.</li>
+            <li>Implemented several successful, and user impacting, applications using Typescript, React, fp-ts, Effect-ts, Jest, and Google Cloud.</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://glitzi.com.mx/" target="external">Glitzi</a></h3>
+            <div class="subhead">
+            <span class="position">Senior Full-Stack Engineer</span>
+            <small class="dates">Oct 2020
+             - May 2021</small>
+            </div>
+          </header>
+          <div class="summary"><p>Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market.</p></div>
+          <ul class="highlights">
+            <li>Implemented security critical, HIPAA compliant, backend code in Python, Django, and SQL for handling sensitive patient medical data.</li>
+            <li>Lead the development of the frontend of the application. Implemented user to user payments using stripe as well as secure user to user file sharing and video calls.</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <h3 class="name"><a href="https://www.linkedin.com/company/appuntos/about/" target="external">Appuntos</a></h3>
+            <div class="subhead">
+            <span class="position">Lead Full-Stack Engineer</span>
+            <small class="dates">Mar 2019
+             - Sep 2020</small>
+            </div>
+          </header>
+          <ul class="highlights">
+            <li>Maintained legacy Django backend and Angular android/ios application while adding new features, improving test coverage, and improving code quality.</li>
+            <li>Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express</li>
+          </ul>
+        </section>
       </section>
       <section id="skills" class="skills">
         <div class="item">
@@ -438,79 +502,19 @@ section.experience .item header .subhead, section.volunteering .item header .sub
         <div class="item">
           <div class="name">DevOps</div>
           <div class="keywords">
+            Linux,
             AWS,
             Google Cloud,
-            Git,
+            AWK,
             Docker,
             Kubernetes,
             Hasura,
             Vercel,
-            Netlify
+            Netlify,
+            Git,
+            Bash
           </div>
         </div>
-        <div class="item">
-          <div class="name">Systems</div>
-          <div class="keywords">
-            Linux,
-            Bash,
-            Make,
-            AWK
-          </div>
-        </div>
-        <div class="item">
-          <div class="name">Misc</div>
-          <div class="keywords">
-            Lisp,
-            LaTeX
-          </div>
-        </div>
-      </section>
-      <section id="experience" class="experience">
-        <section class="item">
-          <h2>Experience</h2>
-          <header>
-            <h3 class="name"><a href="https://projectdiscovery.io" target="external">Project Discovery</a></h3>
-            <div class="subhead">
-            <span class="position">Senior Full-Stack Engineer</span>
-            <small class="dates">May 2021
-             - Apr 2023</small>
-            </div>
-          </header>
-          <ul class="highlights">
-            <li>Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.</li>
-            <li>Improved website and application reliability, security, and user experience company wide by leading the company to adopt typescript(over pure js), test driven development techniques, and functional programming.</li>
-            <li>Implemented several successful, and user impacting, applications using Typescript, Reactjs, fp-ts, effect-ts, Jest, and Google Cloud.</li>
-          </ul>
-        </section>
-        <section class="item">
-          <header>
-            <h3 class="name"><a href="https://glitzi.com.mx/" target="external">Glitzi</a></h3>
-            <div class="subhead">
-            <span class="position">Senior Full-Stack Engineer</span>
-            <small class="dates">Oct 2020
-             - May 2021</small>
-            </div>
-          </header>
-          <div class="summary"><p>Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market.</p></div>
-          <ul class="highlights">
-            <li>Implemented security critical, HIPAA compliant, backend code in *Python*, *Django*, and *SQL* for handling sensitive patient medical data.</li>
-            <li>Lead the development of the frontend of the application. Implemented user to user payments using stripe as well as secure user to user file sharing and video calls.</li>
-          </ul>
-        </section>
-        <section class="item">
-          <header>
-            <h3 class="name"><a href="https://www.linkedin.com/company/appuntos/about/" target="external">Appuntos</a></h3>
-            <div class="subhead">
-            <span class="position">Lead Full-Stack Engineer</span>
-            <small class="dates">Mar 2019
-             - Sep 2020</small>
-            </div>
-          </header>
-          <ul class="highlights">
-            <li>Maintained legacy Django backend and Angular android/ios application while adding new features, improving test coverage, and improving code quality.</li>
-            <li>Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express</li>
-          </ul>
-        </section>
       </section>
       <section id="education" class="education">
         <div class="item">
@@ -523,30 +527,8 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             </small>
           </header>
           <div class="qualification">
-            <span class="studyType">Bachelors</span>
+            <span class="studyType">B.A.</span>
             <span class="area">Mathematics</span>
-            <br>
-            <strong>Courses</strong>
-            <ul class="courses">
-              <li>Mathematical Statistics I,II</li>
-              <li>Advanced Logical Theory (w/ Proof of Incompleteness Theorems)</li>
-              <li>Calculus I, II, Multivariable Calculus , Differencial Equation, Dynamical Systems</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="languages" class="languages">
-        <div class="item">
-          <h2>Languages</h2>
-          <div class="language-item">
-            <span class="language">English:</span>
-            <span class="fluency">Native</span>
-          </div>
-        </div>
-        <div class="item">
-          <div class="language-item">
-            <span class="language">Spanish:</span>
-            <span class="fluency">Fluent(C1)</span>
           </div>
         </div>
       </section>
