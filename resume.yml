@@ -1,7 +1,7 @@
 $schema: "https://github.com/jsonresume/resume-schema/blob/master/schema.json"
 basics:
     name: Jesse Kelly
-    label: Lead Full-Stack Engineer
+    label: Lead Full Stack Engineer
     email: mail@jessekelly.me
     phone: "+1 614 398 0239"
     url: https://jessekelly.me
@@ -21,43 +21,53 @@ education:
       url: https://www.osu.edu/
       area: Mathematics 
       studyType: B.A.
-      startDate: "2014-08-01"
-      endDate: "2017-05-01"
+      startDate: "2014-09-01"
+      endDate: "2017-06-01"
 
 work:
-    - name: ProjectDiscovery
-      company: ProjectDiscovery
+    - name: ProjectDiscovery.io
+      company: ProjectDiscovery.io
       url: https://projectdiscovery.io
-      position: Senior Full-Stack Engineer
-      startDate: "2021-05-01"
-      endDate: "2023-04-01"
+      position: Lead Full Stack Engineer
+      startDate: "2021-06-01"
+      endDate: "2023-07-01"
       location: San Francisco, CA (Remote)
       highlights: 
         - Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.
         - Improved website and application reliability, security, and user experience company wide by leading the company to adopt typescript(over pure js), test driven development techniques, and functional programming.
         - Implemented several successful, and user impacting, applications using Typescript, React, fp-ts, Effect-ts, Jest, and Google Cloud.
 
-    - name: Glitzi 
+    - name: Glitzi (YC S21)
       position: Senior Full-Stack Engineer 
       url: https://glitzi.com.mx/
       location: Mexico City, MX (Hybrid Remote)
-      endDate: "2021-05-01"
+      endDate: "2021-06-01"
       startDate: "2020-10-01"
       summary: Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market. 
       highlights: 
         - Implemented security critical, HIPAA compliant, backend code in Python, Django, and SQL for handling sensitive patient medical data.
         - Lead the development of the frontend of the application. Implemented user to user payments using stripe as well as secure user to user file sharing and video calls.
 
+    - name: Reworth
+      company: Reworth
+      url: https://www.reworth.app
+      position: Senior Full Stack Engineer
+      location: Mexico City, MX (Onsite)
+      startDate: "2020-06-01"
+      endDate: "2020-10-01"
+      highlights: 
+        - Developed a full stack React, Typescript, Python and Django application for working with highly sensitive patient medical information in HIPAA compliant manner.
+
     - name: Appuntos
       company: Appuntos
       url: https://www.linkedin.com/company/appuntos/about/
-      position: Lead Full-Stack Engineer
+      position: Full Stack Engineer
       location: Mexico City, MX (Onsite)
       highlights: 
           - Maintained legacy Django backend and Angular android/ios application while adding new features, improving test coverage, and improving code quality.
           - Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express
-      startDate: "2019-03-01"
-      endDate: "2020-09-01"
+      startDate: "2019-04-01"
+      endDate: "2020-06-01"
 
 interests: 
     - name: SCUBA Diving
