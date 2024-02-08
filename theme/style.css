@@ -71,8 +71,8 @@ blockquote {
 }
 
 section.heading header h1 {
-  font-size: 180%;
-  font-weight: 300;
+  font-size: 200%;
+  font-weight: 600;
   margin: 0;
 }
 section.heading header h2 {
@@ -156,7 +156,7 @@ section.experience .item header a,
 section.experience .item header h3 {
   color: var(--copy-color);
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
 }
 @media (max-width: 566px) {
@@ -232,18 +232,10 @@ section.languages .language-item {
   display: flex;
   justify-content: start;
 }
-section.languages .language-item:first-child {
-  margin-top: var(--spacing);
-}
-section.languages .language-item:last-child {
-  margin-bottom: var(--spacing);
-}
 section.languages .language-item .language {
   display: inline-block;
-  font-size: 90%;
   font-weight: 600;
   margin: 0 var(--spacing) 0 0;
-  text-transform: uppercase;
   vertical-align: top;
   white-space: nowrap;
 }
@@ -278,6 +270,8 @@ section.references .item .name {
 }
 
 section h2 {
+  max-width: min-content;
+  white-space: nowrap;
   color: var(--accent);
   font-size: 135%;
   font-weight: 400;
@@ -290,17 +284,21 @@ section h2::after {
   bottom: -10px;
   content: " ";
   display: inline-block;
-  height: 3px;
+  height: 2px;
   left: 0;
   position: absolute;
-  width: 2.5rem;
+  width: 75%;
 }
 section header h3 {
   margin: 0;
   font-weight: 600;
 }
 
-section.experience .item .highlights, section.volunteering .highlights, section.projects .highlights,
+#experience h3 {
+  font-weight: bold;
+}
+
+section.experience .highlights, section.volunteering .highlights, section.projects .highlights,
 section.projects .keywords,
 section.projects .roles, section.education .item .courses {
   font-size: 90%;
@@ -343,4 +341,10 @@ section.experience .item header .subhead, section.volunteering .item header .sub
     margin: 0;
     padding: 0;
   }
+}
+
+#languages {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
 }

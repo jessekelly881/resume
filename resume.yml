@@ -20,13 +20,9 @@ education:
     - institution: The Ohio State University
       url: https://www.osu.edu/
       area: Mathematics 
-      studyType: Bachelors
+      studyType: B.A.
       startDate: "2014-08-01"
       endDate: "2017-05-01"
-      courses: 
-          - Mathematical Statistics I,II
-          - Advanced Logical Theory (w/ Proof of Incompleteness Theorems)
-          - Calculus I, II, Multivariable Calculus , Differencial Equation, Dynamical Systems
 
 work:
     - name: Project Discovery
@@ -39,7 +35,7 @@ work:
       highlights: 
         - Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.
         - Improved website and application reliability, security, and user experience company wide by leading the company to adopt typescript(over pure js), test driven development techniques, and functional programming.
-        - Implemented several successful, and user impacting, applications using Typescript, Reactjs, fp-ts, effect-ts, Jest, and Google Cloud.
+        - Implemented several successful, and user impacting, applications using Typescript, React, fp-ts, Effect-ts, Jest, and Google Cloud.
 
     - name: Glitzi 
       position: Senior Full-Stack Engineer 
@@ -49,7 +45,7 @@ work:
       startDate: "2020-10-01"
       summary: Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market. 
       highlights: 
-        - Implemented security critical, HIPAA compliant, backend code in *Python*, *Django*, and *SQL* for handling sensitive patient medical data.
+        - Implemented security critical, HIPAA compliant, backend code in Python, Django, and SQL for handling sensitive patient medical data.
         - Lead the development of the frontend of the application. Implemented user to user payments using stripe as well as secure user to user file sharing and video calls.
 
     - name: Appuntos
