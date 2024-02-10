@@ -71,6 +71,10 @@ blockquote {
   margin-bottom: 0 0 var(--spacing);
 }
 
+strong {
+  font-weight: medium;
+}
+
 #resume {
   background: var(--white);
   margin: var(--spacing) var(--spacing-double);
@@ -256,7 +260,6 @@ section.languages .language-item .fluency {
 
 section.interests .item .name {
   font-size: 90%;
-  text-transform: uppercase;
   vertical-align: top;
   white-space: nowrap;
 }
@@ -304,7 +307,6 @@ section.projects .keywords,
 section.projects .roles, section.education .item .courses {
   font-size: 90%;
   line-height: 1.3;
-  list-style: square;
   margin: var(--spacing-small) 0 var(--spacing);
   padding-left: var(--spacing-double);
 }
@@ -373,7 +375,7 @@ section.experience .item header .subhead, section.volunteering .item header .sub
               <span class="contact-detail"><a href="https://jessekelly.me" target="external">https://jessekelly.me</a></span>
             </div>
           </div>
-          <!-- <div class="summary"><p>Lead Full-Stack software engineer with <strong>8 years of experience</strong> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.</p></div> -->
+          <!-- <div class="summary"><p>Lead Full-Stack software engineer with <u>8 years of experience</u> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.</p></div> -->
           
         </header>
       
@@ -431,8 +433,9 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           </header>
           <ul class="highlights">
             <li>Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.</li>
-            <li>Improved website and application reliability, security, and user experience company wide by leading the company to adopt typescript(over pure js), test driven development techniques, and functional programming.</li>
-            <li>Implemented several successful, and user impacting, applications using Typescript, React, fp-ts, Effect-ts, Jest, and Google Cloud.</li>
+            <li>Implemented highly reliable <u>CI/CD</u> pipelines using <u>Github Actions</u> and <u>Vercel</u>.</li>
+            <li>Improved website and application reliability, security, and user experience company wide by leading the company to adopt <u>Typescript</u>, <u>Test Driven Development</u> techniques, and functional programming.</li>
+            <li>Implemented several successful, and user impacting, applications using <u>Typescript</u>, <u>React</u>, <u>fp-ts</u>, <u>Effect-ts</u>, <u>Jest</u>, <u>Vitest</u> and <u>Google Cloud</u>.</li>
           </ul>
         </section>
         <section class="item">
@@ -446,8 +449,8 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           </header>
           <div class="summary"><p>Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market.</p></div>
           <ul class="highlights">
-            <li>Implemented security critical, HIPAA compliant, backend code in Python, Django, and SQL for handling sensitive patient medical data.</li>
-            <li>Lead the development of the frontend of the application. Implemented user to user payments using stripe as well as secure user to user file sharing and video calls.</li>
+            <li>Implemented security critical, HIPAA compliant, backend code in <u>Python</u>, <u>Django</u>, <u>Redis</u>, and <u>SQL</u> for handling sensitive patient medical data.</li>
+            <li>Lead the development of the frontend of the application. Implemented user to user payments using <u>Stripe</u> as well as secure user to user file sharing and video calls.</li>
           </ul>
         </section>
         <section class="item">
@@ -460,7 +463,7 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             </div>
           </header>
           <ul class="highlights">
-            <li>Developed a full stack React, Typescript, Python and Django application for working with highly sensitive patient medical information in HIPAA compliant manner.</li>
+            <li>Developed a full stack <u>React</u>, <u>Typescript</u>, <u>Python</u> and <u>Django</u> application for working with sensitive credit card transaction data.</li>
           </ul>
         </section>
         <section class="item">
@@ -473,59 +476,11 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             </div>
           </header>
           <ul class="highlights">
-            <li>Maintained legacy Django backend and Angular android/ios application while adding new features, improving test coverage, and improving code quality.</li>
-            <li>Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express</li>
+            <li>Maintained legacy <u>Python</u> and <u>Django</u> backend.</li>
+            <li>Maintained and improved an Android and iOS application built using <u>Angular</u>, <u>Capacitor</u>, and <u>Ionic</u> while adding new features, improving test coverage, and improving code quality.</li>
+            <li>Developed new web applications and tools using <u>React</u>, <u>Redux</u>, <u>Node.js</u>, <u>Express</u>, and <u>MongoDB</u></li>
           </ul>
         </section>
-      </section>
-      <section id="skills" class="skills">
-        <div class="item">
-          <h2>Skills</h2>
-          <div class="name">Frontend</div>
-          <div class="keywords">
-            Typescript,
-            Javascript,
-            React,
-            Angular,
-            TailwindCSS,
-            Stylex,
-            Tauri,
-            Cordova,
-            Ionic,
-            Capacitor,
-            HTML5,
-            CSS3,
-            SASS
-          </div>
-        </div>
-        <div class="item">
-          <div class="name">Backend</div>
-          <div class="keywords">
-            SQL,
-            Python,
-            Express,
-            Nextjs,
-            Redis,
-            MongoDB,
-            Django
-          </div>
-        </div>
-        <div class="item">
-          <div class="name">DevOps</div>
-          <div class="keywords">
-            Linux,
-            AWS,
-            Google Cloud,
-            AWK,
-            Docker,
-            Kubernetes,
-            Hasura,
-            Vercel,
-            Netlify,
-            Git,
-            Bash
-          </div>
-        </div>
       </section>
       <section id="education" class="education">
         <div class="item">
@@ -543,7 +498,8 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             <br>
             <strong>Courses</strong>
             <ul class="courses">
-              <li>Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the R programming language and Matlab for data analysis.</li>
+              <li>Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the <u>R</u> programming language and <u>Matlab</u> for data analysis.
+      </li>
             </ul>
           </div>
         </div>
