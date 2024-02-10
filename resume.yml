@@ -23,6 +23,8 @@ education:
       studyType: B.A.
       startDate: "2014-09-01"
       endDate: "2017-06-01"
+      courses:
+        - "Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the R programming language and Matlab for data analysis."
 
 work:
     - name: ProjectDiscovery.io
