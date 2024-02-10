@@ -7,7 +7,7 @@ basics:
     url: https://jessekelly.me
     image: https://avatars.githubusercontent.com/u/22938931
     summary: | 
-        Lead Full-Stack software engineer with <strong>8 years of experience</strong> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.
+        Lead Full-Stack software engineer with <u>8 years of experience</u> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.
     profiles:
         - network: Github
           username: jessekelly881
@@ -24,7 +24,8 @@ education:
       startDate: "2014-09-01"
       endDate: "2017-06-01"
       courses:
-        - "Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the R programming language and Matlab for data analysis."
+        - |
+          Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the <u>R</u> programming language and <u>Matlab</u> for data analysis.
 
 work:
     - name: ProjectDiscovery.io
@@ -36,8 +37,9 @@ work:
       location: San Francisco, CA (Remote)
       highlights: 
         - Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.
-        - Improved website and application reliability, security, and user experience company wide by leading the company to adopt typescript(over pure js), test driven development techniques, and functional programming.
-        - Implemented several successful, and user impacting, applications using Typescript, React, fp-ts, Effect-ts, Jest, and Google Cloud.
+        - Implemented highly reliable <u>CI/CD</u> pipelines using <u>Github Actions</u> and <u>Vercel</u>.
+        - Improved website and application reliability, security, and user experience company wide by leading the company to adopt <u>Typescript</u>, <u>Test Driven Development</u> techniques, and functional programming.
+        - Implemented several successful, and user impacting, applications using <u>Typescript</u>, <u>React</u>, <u>fp-ts</u>, <u>Effect-ts</u>, <u>Jest</u>, <u>Vitest</u> and <u>Google Cloud</u>.
 
     - name: Glitzi (YC S21)
       position: Senior Full-Stack Engineer 
@@ -47,8 +49,8 @@ work:
       startDate: "2020-09-01"
       summary: Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market. 
       highlights: 
-        - Implemented security critical, HIPAA compliant, backend code in Python, Django, and SQL for handling sensitive patient medical data.
-        - Lead the development of the frontend of the application. Implemented user to user payments using stripe as well as secure user to user file sharing and video calls.
+        - Implemented security critical, HIPAA compliant, backend code in <u>Python</u>, <u>Django</u>, <u>Redis</u>, and <u>SQL</u> for handling sensitive patient medical data.
+        - Lead the development of the frontend of the application. Implemented user to user payments using <u>Stripe</u> as well as secure user to user file sharing and video calls.
 
     - name: Reworth
       company: Reworth
@@ -58,7 +60,7 @@ work:
       startDate: "2020-05-01"
       endDate: "2020-09-01"
       highlights: 
-        - Developed a full stack React, Typescript, Python and Django application for working with highly sensitive patient medical information in HIPAA compliant manner.
+        - Developed a full stack <u>React</u>, <u>Typescript</u>, <u>Python</u> and <u>Django</u> application for working with sensitive credit card transaction data.
 
     - name: Appuntos
       company: Appuntos
@@ -66,58 +68,15 @@ work:
       position: Full Stack Engineer
       location: Mexico City, MX (Onsite)
       highlights: 
-          - Maintained legacy Django backend and Angular android/ios application while adding new features, improving test coverage, and improving code quality.
-          - Successfully lead a small team to develop new web applications built using React, Redux, MongoDB, and Express
+          - Maintained legacy <u>Python</u> and <u>Django</u> backend.
+          - Maintained and improved an Android and iOS application built using <u>Angular</u>, <u>Capacitor</u>, and <u>Ionic</u> while adding new features, improving test coverage, and improving code quality.
+          - Developed new web applications and tools using <u>React</u>, <u>Redux</u>, <u>Node.js</u>, <u>Express</u>, and <u>MongoDB</u>
       startDate: "2019-03-01"
       endDate: "2020-05-01"
 
 interests: 
     - name: SCUBA Diving
     - name: Travel
-
-skills:
-    - name: Frontend
-      level: Expert
-      keywords:
-        - Typescript
-        - Javascript
-        - React
-        - Angular
-        - TailwindCSS
-        - Stylex
-        - Tauri
-        - Cordova
-        - Ionic
-        - Capacitor
-        - HTML5
-        - CSS3
-        - SASS
-
-    - name: Backend
-      level: Expert
-      keywords:
-        - SQL
-        - Python
-        - Express
-        - Nextjs
-        - Redis
-        - MongoDB
-        - Django
-
-    - name: DevOps
-      level: Expert
-      keywords:
-        - Linux
-        - AWS
-        - Google Cloud
-        - AWK
-        - Docker
-        - Kubernetes
-        - Hasura
-        - Vercel
-        - Netlify
-        - Git
-        - Bash
 
 languages: 
     - language: English

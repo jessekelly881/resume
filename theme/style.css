@@ -64,6 +64,10 @@ blockquote {
   margin-bottom: 0 0 var(--spacing);
 }
 
+strong {
+  font-weight: medium;
+}
+
 #resume {
   background: var(--white);
   margin: var(--spacing) var(--spacing-double);
@@ -249,7 +253,6 @@ section.languages .language-item .fluency {
 
 section.interests .item .name {
   font-size: 90%;
-  text-transform: uppercase;
   vertical-align: top;
   white-space: nowrap;
 }
@@ -297,7 +300,6 @@ section.projects .keywords,
 section.projects .roles, section.education .item .courses {
   font-size: 90%;
   line-height: 1.3;
-  list-style: square;
   margin: var(--spacing-small) 0 var(--spacing);
   padding-left: var(--spacing-double);
 }
