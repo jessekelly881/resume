@@ -80,7 +80,7 @@ section.heading {
 
 section.heading header h1 {
   font-size: 200%;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
 }
 section.heading header h2 {
@@ -164,7 +164,7 @@ section.experience .item header a,
 section.experience .item header h3 {
   color: var(--copy-color);
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
 }
 @media (max-width: 566px) {
@@ -288,11 +288,7 @@ section h2::after {
 }
 section header h3 {
   margin: 0;
-  font-weight: 600;
-}
-
-#experience h3 {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 section.experience .highlights, section.volunteering .highlights, section.projects .highlights,

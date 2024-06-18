@@ -28,6 +28,15 @@ education:
           Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the <u>R</u> programming language and <u>Matlab</u> for data analysis.
 
 work:
+    - name: Language study in Spain
+      position: Career break
+      location: Barcelona, Spain
+      highlights:
+        - Moved to Barcelona Spain for a year of language study.
+        - Contributed to various open source projects including <a href="https://effect.website">effect-ts</a>
+      startDate: "2023-06-01"
+      endDate: "2024-06-01"
+
     - name: ProjectDiscovery.io
       company: ProjectDiscovery.io
       url: https://projectdiscovery.io
