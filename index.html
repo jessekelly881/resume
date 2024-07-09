@@ -49,9 +49,9 @@ body {
   display: flex;
   font-family: "Open Sans", sans-serif;
   font-size: var(--base-font-size);
-  justify-content: center;
   line-height: 1.25;
-  padding-top: 1em;
+  padding-top: 0.75em;
+  print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
 }
 
@@ -133,6 +133,12 @@ section.heading header .header-container {
 @media print {
   section.heading header .header-container {
     flex-direction: row;
+  }
+}
+
+@media screen {
+  body{
+    justify-content: center;
   }
 }
 
