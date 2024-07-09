@@ -4,14 +4,14 @@
   --accent: #0e7490; /* cyan-700 */
   --anchor-color: #000000;
   --copy-color-light: #666666;
-  --copy-color: #242424;
+  --text-color: #222;
   --grey: #71717a; /* zinc-500 */
   --white:#FFFFFF;
-  --base-font-size: 12pt;
+  --base-font-size: 12.5pt;
   --spacing-double: 1rem;
   --spacing-small: .1rem;
   --spacing: .35rem;
-  --font-size-large: 120%;
+  --font-size-large: 115%;
   --color-emphasis: #0e7490 /* cyan-700 */
 }
 @media (min-width: 567px) {
@@ -24,7 +24,7 @@
     --anchor-color: #000000;
     --base-font-size: 9pt;
     --copy-color-light: #000000;
-    --copy-color: #000000;
+    --text-color: #000000;
 
     /* Reduce spacing in pdf */
     --spacing-double: 0.875rem; 
@@ -38,7 +38,7 @@
 
 body {
   text-wrap: pretty;
-  color: var(--copy-color);
+  color: var(--text-color);
   display: flex;
   font-family: "Open Sans", sans-serif;
   font-size: var(--base-font-size);
@@ -174,8 +174,8 @@ section.heading .profiles span {
 }
 
 section.experience .item {
-  margin: 0 0 0.5em;
-  padding: 0 0 0.5em;
+  margin: 0 0 var(--spacing);
+  padding: 0 0 var(--spacing);
 }
 
 section h2 {
@@ -187,7 +187,7 @@ section.experience .item:last-child {
 }
 section.experience .item header a,
 section.experience .item header h3 {
-  color: var(--copy-color);
+  color: var(--text-color);
   display: inline-block;
   font-weight: 400;
   text-decoration: none;
@@ -249,6 +249,7 @@ section.volunteering .item .position {
 }
 
 section.experience .summary {
+  color: var(--grey);
   margin-bottom: var(--spacing);
 }
 
