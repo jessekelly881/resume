@@ -5,19 +5,21 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 	<title>Jesse Kelly   - Lead Full Stack Engineer</title>
 	<style>
-  	:root {
-  --accent: #8a0303;
+  	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --accent: #0e7490; /* cyan-700 */
   --anchor-color: #000000;
-  --blue:#2C85B1;
   --copy-color-light: #666666;
   --copy-color: #242424;
-  --grey:#999999;
-  --light-grey:#ededed;
+  --grey: #71717a; /* zinc-500 */
   --white:#FFFFFF;
   --base-font-size: 12pt;
   --spacing-double: 1rem;
   --spacing-small: .1rem;
   --spacing: .35rem;
+  --font-size-large: 120%;
+  --color-emphasis: #0e7490 /* cyan-700 */
 }
 @media (min-width: 567px) {
   :root {
@@ -36,17 +38,25 @@
   }
 }
 
+.network {
+  font-size: 90%;
+  color: var(--grey)
+}
+
 body {
+  text-wrap: pretty;
   color: var(--copy-color);
   display: flex;
-  font: var(--base-font-size) "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--base-font-size);
   justify-content: center;
   line-height: 1.25;
+  padding-top: 1em;
   -webkit-print-color-adjust: exact;
 }
 
 em {
-  color: var(--grey);
+  color: var(--color-emphasis)
 }
 
 p {
@@ -72,7 +82,7 @@ blockquote {
 }
 
 strong {
-  font-weight: medium;
+  font-weight: 400;
 }
 
 #resume {
@@ -86,12 +96,12 @@ section.heading {
 }
 
 section.heading header h1 {
-  font-size: 200%;
+  font-size: var(--font-size-large);
   font-weight: 400;
   margin: 0;
 }
 section.heading header h2 {
-  font-size: 140%;
+  font-size: var(--font-size-large);
   font-weight: 400;
   margin: 0;
 }
@@ -102,6 +112,11 @@ section.heading header .contact {
   display: flex;
   flex-direction: column;
   /* padding-bottom: var(--spacing); */
+}
+
+.contact-detail, .contact-detail a {
+  font-size: 95%;
+  color: var(--grey)
 }
 
 section.heading header .header-container {
@@ -135,7 +150,7 @@ section.heading header address {
 section.heading .profiles {
   display: flex;
   flex-direction: column;
-  padding-bottom: var(--spacing);
+  padding-bottom: var(--spacing-small);
 }
 
 /* @media (min-width: 567px) { */
@@ -160,10 +175,14 @@ section.heading .profiles span {
 }
 
 section.experience .item {
-  border-bottom: 1px solid var(--light-grey);
   margin: 0 0 0.5em;
   padding: 0 0 0.5em;
 }
+
+section h2 {
+  font-size: var(--font-size-large)
+}
+
 section.experience .item:last-child {
   border-bottom: none;
 }
@@ -190,14 +209,12 @@ section.experience .item .summary p:last-child {
   margin-bottom: var(--spacing-small);
 }
 section.experience .item .position {
-  color: var(--copy-color-light);
-  font-size: 100%;
-  font-weight: 500;
+  font-size: var(--font-size-large);
+  font-weight: 400;
   margin: var(--spacing-small) 0;
 }
-section.experience .item .startDate,
-section.experience .item .endDate {
-  color: var(--grey);
+.item .dates {
+  color: var(--grey)
 }
 section.skills .item {
   margin: 0;
@@ -212,7 +229,7 @@ section.skills .item:last-child {
 section.skills .item .name {
   display: inline-block;
   font-size: 90%;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 var(--spacing) 0 0;
   text-transform: uppercase;
   vertical-align: top;
@@ -224,23 +241,40 @@ section.skills .item .keywords {
   vertical-align: top;
 }
 
-section.volunteering .item .position {
-  font-weight: 600;
+section.experience header {
+  margin-bottom: var(--spacing);
 }
+
+section.volunteering .item .position {
+  font-weight: 400;
+}
+
+section.experience .summary {
+  margin-bottom: var(--spacing);
+}
+
+li, .summary {
+    max-width: 80ch;
+}
+
+.highlights li {
+  margin-bottom: var(--spacing);
+}
+
 section.volunteering .item header .subhead {
   margin-top: var(--spacing);
 }
 section.projects .item strong {
   color: var(--copy-color-light);
-  font-weight: 600;
+  font-weight: 400;
   display: inline-block;
   /* padding-top: var(--spacing); */
 }
 section.awards .item .title {
-  font-weight: 600;
+  font-weight: 400;
 }
 section.publications .item .name {
-  font-weight: 600;
+  font-weight: 400;
 }
 section.languages .language-item {
   align-items: baseline;
@@ -264,6 +298,11 @@ section.interests .item .name {
   white-space: nowrap;
 }
 
+section.experience .item .name {
+  vertical-align: top;
+  white-space: nowrap;
+}
+
 section.references .item blockquote {
   font-style: italic;
   margin-bottom: 0;
@@ -278,24 +317,31 @@ section h2 {
   margin: 0 0 0.75rem 0;
   white-space: nowrap;
   color: var(--accent);
-  font-size: 115%;
   font-weight: 400;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
+/*
 section h2::after {
   background: var(--accent);
-  bottom: -5px;
+  bottom: -2px;
   content: " ";
   display: inline-block;
-  height: 2px;
+  height: 1px;
+  border-radius: 5px;
   left: 0;
   position: absolute;
-  width: 75%;
+  width: 85%;
 }
+*/
 section header h3 {
   margin: 0;
   font-weight: 400;
+}
+
+.courses-header {
+  font-size: 90%;
+  color: var(--grey)
 }
 
 section.experience .highlights, section.volunteering .highlights, section.projects .highlights,
@@ -366,12 +412,11 @@ section.experience .item header .subhead, section.volunteering .item header .sub
               <h2>Lead Full Stack Engineer</h2>
             </div>
             <div class="contact">
-              <span class="contact-detail"><a href="mailto:mail@jessekelly.me">mail@jessekelly.me</a></span>
+              <span class="contact-detail"><a href="mailto:Jesse@jessekelly.me">Jesse@jessekelly.me</a></span>
               <span class="contact-detail">+1 614 398 0239</span>
-              <span class="contact-detail"><a href="https://jessekelly.me" target="external">https://jessekelly.me</a></span>
             </div>
           </div>
-          <!-- <div class="summary"><p>Lead Full-Stack software engineer with <u>8 years of experience</u> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.</p></div> -->
+          <!-- <div class="summary"><p>Lead Full-Stack software engineer with <em>8 years of experience</em> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.</p></div> -->
           
         </header>
       
@@ -388,7 +433,7 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             </span>
           </div>
           <div class="profile">
-            <strong class="network">Linkedin</strong>
+            <strong class="network">LinkedIn</strong>
             <span class="username">
               <a href="https://www.linkedin.com/in/jesse-kelly-5287a8199/" target="external">@jesse-kelly-5287a8199</a>
             </span>
@@ -400,95 +445,66 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           </div>
         </div>
       </section>
-      
-      <div id="languages" class="languages">
-        <div class="item">
-          <div class="language-item">
-            <span class="language">English:</span>
-            <span class="fluency">Native</span>
-          </div>
-        </div>
-        <div class="item">
-          <div class="language-item">
-            <span class="language">Spanish:</span>
-            <span class="fluency">Fluent(C1)</span>
-          </div>
-        </div>
-      </div>
       <br />
       <section id="experience" class="experience">
         <section class="item">
           <h2>Professional Experience</h2>
           <header>
-            <h3 class="name">Language study in Spain</h3>
+            <h3 class="position">Lead Full Stack Engineer</h3>
             <div class="subhead">
-            <span class="position">Career break</span>
-            <small class="dates">Jun 2023
-             - Jun 2024</small>
-            </div>
-          </header>
-          <ul class="highlights">
-            <li>Moved to Barcelona Spain for a year of language study.</li>
-            <li>Contributed to various open source projects including <a href="https://effect.website">effect-ts</a></li>
-          </ul>
-        </section>
-        <section class="item">
-          <header>
-            <h3 class="name"><a href="https://projectdiscovery.io" target="external">ProjectDiscovery.io</a></h3>
-            <div class="subhead">
-            <span class="position">Lead Full Stack Engineer</span>
+            <span class="name"><a href="https://projectdiscovery.io" target="external">ProjectDiscovery.io</a></span>
             <small class="dates">May 2021
              - Jun 2023</small>
             </div>
           </header>
           <ul class="highlights">
             <li>Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.</li>
-            <li>Implemented highly reliable <u>CI/CD</u> pipelines using <u>Github Actions</u> and <u>Vercel</u>.</li>
-            <li>Improved website and application reliability, security, and user experience company wide by leading the company to adopt <u>Typescript</u>, <u>Test Driven Development</u> techniques, and functional programming.</li>
-            <li>Implemented several successful, and user impacting, applications using <u>Typescript</u>, <u>React</u>, <u>fp-ts</u>, <u>Effect-ts</u>, <u>Jest</u>, <u>Vitest</u> and <u>Google Cloud</u>.</li>
+            <li>Implemented highly reliable <em>CI/CD</em> pipelines using <em>Github Actions</em> and <em>Vercel</em>.</li>
+            <li>Improved website and application reliability, security, and user experience company wide by leading the company to adopt <em>Typescript</em>, <em>Test Driven Development</em> techniques, and functional programming.</li>
+            <li>Implemented several successful, and user impacting, applications using <em>Typescript</em>, <em>React</em>, <em>fp-ts</em>, <em>Effect-ts</em>, <em>Jest</em>, <em>Vitest</em> and <em>Google Cloud</em>.</li>
           </ul>
         </section>
         <section class="item">
           <header>
-            <h3 class="name"><a href="https://glitzi.com.mx/" target="external">Glitzi (YC S21)</a></h3>
+            <h3 class="position">Senior Full-Stack Engineer</h3>
             <div class="subhead">
-            <span class="position">Senior Full-Stack Engineer</span>
+            <span class="name"><a href="https://glitzi.com.mx/" target="external">Glitzi (YC S21)</a></span>
             <small class="dates">Sep 2020
              - May 2021</small>
             </div>
           </header>
           <div class="summary"><p>Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market.</p></div>
           <ul class="highlights">
-            <li>Implemented security critical, HIPAA compliant, backend code in <u>Python</u>, <u>Django</u>, <u>Redis</u>, and <u>SQL</u> for handling sensitive patient medical data.</li>
-            <li>Lead the development of the frontend of the application. Implemented user to user payments using <u>Stripe</u> as well as secure user to user file sharing and video calls.</li>
+            <li>Implemented security critical, HIPAA compliant, backend code in <em>Python</em>, <em>Django</em>, <em>Redis</em>, and <em>SQL</em> for handling sensitive patient medical data.</li>
+            <li>Lead the development of the frontend of the application. Implemented user to user payments using <em>Stripe</em> as well as secure user to user file sharing and video calls.</li>
           </ul>
         </section>
         <section class="item">
           <header>
-            <h3 class="name"><a href="https://www.reworth.app" target="external">Reworth</a></h3>
+            <h3 class="position">Senior Full Stack Engineer</h3>
             <div class="subhead">
-            <span class="position">Senior Full Stack Engineer</span>
+            <span class="name"><a href="https://www.reworth.app" target="external">Reworth</a></span>
             <small class="dates">May 2020
              - Sep 2020</small>
             </div>
           </header>
           <ul class="highlights">
-            <li>Developed a full stack <u>React</u>, <u>Typescript</u>, <u>Python</u> and <u>Django</u> application for working with sensitive credit card transaction data.</li>
+            <li>Developed a full stack <em>React</em>, <em>Typescript</em>, <em>Python</em> and <em>Django</em> application for working with sensitive credit card transaction data.</li>
           </ul>
         </section>
         <section class="item">
           <header>
-            <h3 class="name"><a href="https://www.linkedin.com/company/appuntos/about/" target="external">Appuntos</a></h3>
+            <h3 class="position">Full Stack Engineer</h3>
             <div class="subhead">
-            <span class="position">Full Stack Engineer</span>
+            <span class="name"><a href="https://www.linkedin.com/company/appuntos/about/" target="external">Appuntos</a></span>
             <small class="dates">Mar 2019
              - May 2020</small>
             </div>
           </header>
           <ul class="highlights">
-            <li>Maintained legacy <u>Python</u> and <u>Django</u> backend.</li>
-            <li>Maintained and improved an Android and iOS application built using <u>Angular</u>, <u>Capacitor</u>, and <u>Ionic</u> while adding new features, improving test coverage, and improving code quality.</li>
-            <li>Developed new web applications and tools using <u>React</u>, <u>Redux</u>, <u>Node.js</u>, <u>Express</u>, and <u>MongoDB</u></li>
+            <li>Maintained legacy <em>Python</em> and <em>Django</em> backend.</li>
+            <li>Maintained and improved an Android and iOS application built using <em>Angular</em>, <em>Capacitor</em>, and <em>Ionic</em> while adding new features, improving test coverage, and improving code quality.</li>
+            <li>Developed new web applications and tools using <em>React</em>, <em>Redux</em>, <em>Node.js</em>, <em>Express</em>, and <em>MongoDB</em></li>
           </ul>
         </section>
       </section>
@@ -498,31 +514,22 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           <header>
               <h3 class="name">The Ohio State University</h3>
             <small class="dates">
-              <span class="startDate">Sep 2014</span>
-              <span class="endDate"> - Jun 2017</span>
+              <span class="dates">Sep 2014</span>
+              <span class="dates"> - Jun 2017</span>
             </small>
           </header>
           <div class="qualification">
             <span class="studyType">B.A.</span>
             <span class="area">Mathematics</span>
             <br>
-            <strong>Courses</strong>
+            <strong class="courses-header">Courses</strong>
             <ul class="courses">
-              <li>Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the <u>R</u> programming language and <u>Matlab</u> for data analysis.
+              <li>Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the <em>R</em> programming language and <em>Matlab</em> for data analysis.
       </li>
             </ul>
           </div>
         </div>
         <br />
-      </section>
-      <section id="interests" class="interests">
-        <div class="item">
-          <h2>Interests</h2>
-          <span class="name">SCUBA Diving</span>
-        </div>
-        <div class="item">
-          <span class="name">Travel</span>
-        </div>
       </section>
     </div>
 	</body>
