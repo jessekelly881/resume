@@ -2,17 +2,16 @@ $schema: "https://github.com/jsonresume/resume-schema/blob/master/schema.json"
 basics:
     name: Jesse Kelly
     label: Lead Full Stack Engineer
-    email: mail@jessekelly.me
+    email: Jesse@jessekelly.me
     phone: "+1 614 398 0239"
-    url: https://jessekelly.me
     image: https://avatars.githubusercontent.com/u/22938931
     summary: | 
-        Lead Full-Stack software engineer with <u>8 years of experience</u> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.
+        Lead Full-Stack software engineer with <em>8 years of experience</em> building applications in Typescript, and Python specializing in functional, test driven, software engineering techniques.
     profiles:
         - network: Github
           username: jessekelly881
           url: https://github.com/jessekelly881
-        - network: Linkedin
+        - network: LinkedIn
           username: jesse-kelly-5287a8199
           url: https://www.linkedin.com/in/jesse-kelly-5287a8199/
 
@@ -25,18 +24,9 @@ education:
       endDate: "2017-06-01"
       courses:
         - |
-          Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the <u>R</u> programming language and <u>Matlab</u> for data analysis.
+          Mathematical Statistics I,II: Learned advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Used the <em>R</em> programming language and <em>Matlab</em> for data analysis.
 
 work:
-    - name: Language study in Spain
-      position: Career break
-      location: Barcelona, Spain
-      highlights:
-        - Moved to Barcelona Spain for a year of language study.
-        - Contributed to various open source projects including <a href="https://effect.website">effect-ts</a>
-      startDate: "2023-06-01"
-      endDate: "2024-06-01"
-
     - name: ProjectDiscovery.io
       company: ProjectDiscovery.io
       url: https://projectdiscovery.io
@@ -46,9 +36,9 @@ work:
       location: San Francisco, CA (Remote)
       highlights: 
         - Acted as the technical lead and lead software architect for the web development team(approx. 4 engineers) as well as an advisor to other technical teams.
-        - Implemented highly reliable <u>CI/CD</u> pipelines using <u>Github Actions</u> and <u>Vercel</u>.
-        - Improved website and application reliability, security, and user experience company wide by leading the company to adopt <u>Typescript</u>, <u>Test Driven Development</u> techniques, and functional programming.
-        - Implemented several successful, and user impacting, applications using <u>Typescript</u>, <u>React</u>, <u>fp-ts</u>, <u>Effect-ts</u>, <u>Jest</u>, <u>Vitest</u> and <u>Google Cloud</u>.
+        - Implemented highly reliable <em>CI/CD</em> pipelines using <em>Github Actions</em> and <em>Vercel</em>.
+        - Improved website and application reliability, security, and user experience company wide by leading the company to adopt <em>Typescript</em>, <em>Test Driven Development</em> techniques, and functional programming.
+        - Implemented several successful, and user impacting, applications using <em>Typescript</em>, <em>React</em>, <em>fp-ts</em>, <em>Effect-ts</em>, <em>Jest</em>, <em>Vitest</em> and <em>Google Cloud</em>.
 
     - name: Glitzi (YC S21)
       position: Senior Full-Stack Engineer 
@@ -58,8 +48,8 @@ work:
       startDate: "2020-09-01"
       summary: Worked with Glitzi alongside 3 other engineers to launch a telemedicine platform targeting the Mexican market. 
       highlights: 
-        - Implemented security critical, HIPAA compliant, backend code in <u>Python</u>, <u>Django</u>, <u>Redis</u>, and <u>SQL</u> for handling sensitive patient medical data.
-        - Lead the development of the frontend of the application. Implemented user to user payments using <u>Stripe</u> as well as secure user to user file sharing and video calls.
+        - Implemented security critical, HIPAA compliant, backend code in <em>Python</em>, <em>Django</em>, <em>Redis</em>, and <em>SQL</em> for handling sensitive patient medical data.
+        - Lead the development of the frontend of the application. Implemented user to user payments using <em>Stripe</em> as well as secure user to user file sharing and video calls.
 
     - name: Reworth
       company: Reworth
@@ -69,7 +59,7 @@ work:
       startDate: "2020-05-01"
       endDate: "2020-09-01"
       highlights: 
-        - Developed a full stack <u>React</u>, <u>Typescript</u>, <u>Python</u> and <u>Django</u> application for working with sensitive credit card transaction data.
+        - Developed a full stack <em>React</em>, <em>Typescript</em>, <em>Python</em> and <em>Django</em> application for working with sensitive credit card transaction data.
 
     - name: Appuntos
       company: Appuntos
@@ -77,9 +67,9 @@ work:
       position: Full Stack Engineer
       location: Mexico City, MX (Onsite)
       highlights: 
-          - Maintained legacy <u>Python</u> and <u>Django</u> backend.
-          - Maintained and improved an Android and iOS application built using <u>Angular</u>, <u>Capacitor</u>, and <u>Ionic</u> while adding new features, improving test coverage, and improving code quality.
-          - Developed new web applications and tools using <u>React</u>, <u>Redux</u>, <u>Node.js</u>, <u>Express</u>, and <u>MongoDB</u>
+          - Maintained legacy <em>Python</em> and <em>Django</em> backend.
+          - Maintained and improved an Android and iOS application built using <em>Angular</em>, <em>Capacitor</em>, and <em>Ionic</em> while adding new features, improving test coverage, and improving code quality.
+          - Developed new web applications and tools using <em>React</em>, <em>Redux</em>, <em>Node.js</em>, <em>Express</em>, and <em>MongoDB</em>
       startDate: "2019-03-01"
       endDate: "2020-05-01"
 

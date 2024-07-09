@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
-  --accent: #8a0303;
+  --accent: #0e7490; /* cyan-700 */
   --anchor-color: #000000;
-  --blue:#2C85B1;
   --copy-color-light: #666666;
   --copy-color: #242424;
-  --grey:#999999;
-  --light-grey:#ededed;
+  --grey: #71717a; /* zinc-500 */
   --white:#FFFFFF;
   --base-font-size: 12pt;
   --spacing-double: 1rem;
   --spacing-small: .1rem;
   --spacing: .35rem;
+  --font-size-large: 120%;
+  --color-emphasis: #0e7490 /* cyan-700 */
 }
 @media (min-width: 567px) {
   :root {
@@ -29,17 +31,25 @@
   }
 }
 
+.network {
+  font-size: 90%;
+  color: var(--grey)
+}
+
 body {
+  text-wrap: pretty;
   color: var(--copy-color);
   display: flex;
-  font: var(--base-font-size) "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--base-font-size);
   justify-content: center;
   line-height: 1.25;
+  padding-top: 1em;
   -webkit-print-color-adjust: exact;
 }
 
 em {
-  color: var(--grey);
+  color: var(--color-emphasis)
 }
 
 p {
@@ -65,7 +75,7 @@ blockquote {
 }
 
 strong {
-  font-weight: medium;
+  font-weight: 400;
 }
 
 #resume {
@@ -79,12 +89,12 @@ section.heading {
 }
 
 section.heading header h1 {
-  font-size: 200%;
+  font-size: var(--font-size-large);
   font-weight: 400;
   margin: 0;
 }
 section.heading header h2 {
-  font-size: 140%;
+  font-size: var(--font-size-large);
   font-weight: 400;
   margin: 0;
 }
@@ -95,6 +105,11 @@ section.heading header .contact {
   display: flex;
   flex-direction: column;
   /* padding-bottom: var(--spacing); */
+}
+
+.contact-detail, .contact-detail a {
+  font-size: 95%;
+  color: var(--grey)
 }
 
 section.heading header .header-container {
@@ -128,7 +143,7 @@ section.heading header address {
 section.heading .profiles {
   display: flex;
   flex-direction: column;
-  padding-bottom: var(--spacing);
+  padding-bottom: var(--spacing-small);
 }
 
 /* @media (min-width: 567px) { */
@@ -153,10 +168,14 @@ section.heading .profiles span {
 }
 
 section.experience .item {
-  border-bottom: 1px solid var(--light-grey);
   margin: 0 0 0.5em;
   padding: 0 0 0.5em;
 }
+
+section h2 {
+  font-size: var(--font-size-large)
+}
+
 section.experience .item:last-child {
   border-bottom: none;
 }
@@ -183,14 +202,12 @@ section.experience .item .summary p:last-child {
   margin-bottom: var(--spacing-small);
 }
 section.experience .item .position {
-  color: var(--copy-color-light);
-  font-size: 100%;
-  font-weight: 500;
+  font-size: var(--font-size-large);
+  font-weight: 400;
   margin: var(--spacing-small) 0;
 }
-section.experience .item .startDate,
-section.experience .item .endDate {
-  color: var(--grey);
+.item .dates {
+  color: var(--grey)
 }
 section.skills .item {
   margin: 0;
@@ -205,7 +222,7 @@ section.skills .item:last-child {
 section.skills .item .name {
   display: inline-block;
   font-size: 90%;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 var(--spacing) 0 0;
   text-transform: uppercase;
   vertical-align: top;
@@ -217,23 +234,40 @@ section.skills .item .keywords {
   vertical-align: top;
 }
 
-section.volunteering .item .position {
-  font-weight: 600;
+section.experience header {
+  margin-bottom: var(--spacing);
 }
+
+section.volunteering .item .position {
+  font-weight: 400;
+}
+
+section.experience .summary {
+  margin-bottom: var(--spacing);
+}
+
+li, .summary {
+    max-width: 80ch;
+}
+
+.highlights li {
+  margin-bottom: var(--spacing);
+}
+
 section.volunteering .item header .subhead {
   margin-top: var(--spacing);
 }
 section.projects .item strong {
   color: var(--copy-color-light);
-  font-weight: 600;
+  font-weight: 400;
   display: inline-block;
   /* padding-top: var(--spacing); */
 }
 section.awards .item .title {
-  font-weight: 600;
+  font-weight: 400;
 }
 section.publications .item .name {
-  font-weight: 600;
+  font-weight: 400;
 }
 section.languages .language-item {
   align-items: baseline;
@@ -257,6 +291,11 @@ section.interests .item .name {
   white-space: nowrap;
 }
 
+section.experience .item .name {
+  vertical-align: top;
+  white-space: nowrap;
+}
+
 section.references .item blockquote {
   font-style: italic;
   margin-bottom: 0;
@@ -271,24 +310,31 @@ section h2 {
   margin: 0 0 0.75rem 0;
   white-space: nowrap;
   color: var(--accent);
-  font-size: 115%;
   font-weight: 400;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
+/*
 section h2::after {
   background: var(--accent);
-  bottom: -5px;
+  bottom: -2px;
   content: " ";
   display: inline-block;
-  height: 2px;
+  height: 1px;
+  border-radius: 5px;
   left: 0;
   position: absolute;
-  width: 75%;
+  width: 85%;
 }
+*/
 section header h3 {
   margin: 0;
   font-weight: 400;
+}
+
+.courses-header {
+  font-size: 90%;
+  color: var(--grey)
 }
 
 section.experience .highlights, section.volunteering .highlights, section.projects .highlights,

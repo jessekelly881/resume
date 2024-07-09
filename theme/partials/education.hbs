@@ -11,10 +11,10 @@
       {{/if}}
       <small class="dates">
         {{#if startDate}}
-        <span class="startDate">{{date startDate}}</span>
+        <span class="dates">{{date startDate}}</span>
         {{/if}}
         {{#if endDate}}
-        <span class="endDate"> - {{date endDate}}</span>
+        <span class="dates"> - {{date endDate}}</span>
         {{else}}
         <span class="endDate"> - Present</span>
         {{/if}}
@@ -35,7 +35,7 @@
       {{/if}}
       {{#if courses.length}}
       <br>
-      <strong>Courses</strong>
+      <strong class="courses-header">Courses</strong>
       <ul class="courses">
         {{#each courses}}
         <li>{{{.}}}</li>
