@@ -6,13 +6,15 @@
     <h2>Professional Experience</h2>
     {{/if}}
     <header>
-      <h3 class="position">{{position}}</h3>
       <div class="subhead">
-      {{#if url}}
-      <span class="name"><a href="{{url}}" target="external">{{name}}</a></span>
-      {{else}}
-      <span class="name">{{name}}</span>
-      {{/if}}
+      <h3 class="position">
+        <span class="title">{{position}},</span>
+        {{#if url}}
+        <span class="name"><a href="{{url}}" target="external">{{name}}</a></span>
+        {{else}}
+        <span class="name">{{name}}</span>
+        {{/if}}
+      </h3>
       {{#if startDate}}
       <small class="dates">{{date startDate}}
       {{/if}}

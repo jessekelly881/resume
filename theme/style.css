@@ -7,11 +7,11 @@
   --text-color: #222;
   --grey: #71717a; /* zinc-500 */
   --white:#FFFFFF;
-  --base-font-size: 12.25pt;
+  --base-font-size: 12.5pt;
   --spacing-double: 1rem;
   --spacing-small: .1rem;
-  --spacing: .25rem;
-  --font-size-large: 115%;
+  --spacing: .3rem;
+  --font-size-large: 120%;
   --color-emphasis: #0e7490 /* cyan-700 */
 }
 @media (min-width: 567px) {
@@ -208,10 +208,15 @@ section.experience .item .summary p:last-child {
   margin-bottom: var(--spacing-small);
 }
 section.experience .item .position {
-  font-size: var(--font-size-large);
+  font-size: var(--base-font-size);
   font-weight: 400;
   margin: var(--spacing-small) 0;
 }
+
+section.experience .item .position .name a {
+  color: var(--grey);
+}
+
 .item .dates {
   color: var(--grey)
 }
@@ -276,6 +281,15 @@ section.awards .item .title {
 section.publications .item .name {
   font-weight: 400;
 }
+
+section.education .item header .name {
+  font-size: var(--base-font-size);
+}
+
+section.education .item header .name .institution {
+  color: var(--grey)
+}
+
 section.languages .language-item {
   align-items: baseline;
   display: flex;
@@ -354,6 +368,7 @@ section.experience .item, section.volunteering .item, section.projects .item, se
 section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
   align-items: baseline;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 @media (min-width: 567px) {

@@ -7,7 +7,15 @@
     {{/if}}
     <header>
       {{#if institution}}
-        <h3 class="name">{{institution}}</h3>
+        <h3 class="name">
+        {{#if studyType}}
+          <span class="studyType">{{studyType}}</span>
+        {{/if}}
+        {{#if area}}
+          <span class="area">{{area}},</span>
+        {{/if}}
+        <span class="institution">{{institution}}</span>
+        </h3>
       {{/if}}
       <small class="dates">
         {{#if startDate}}
@@ -21,20 +29,7 @@
       </small>
     </header>
     <div class="qualification">
-      {{#if studyType}}
-      <span class="studyType">{{studyType}}</span>
-      {{/if}}
-      {{#if area}}
-      <span class="area">{{area}}</span>
-      {{/if}}
-      {{#if gpa}}
-      <span class="gpa">GPA: {{gpa}}</span>
-      {{/if}}
-      {{#if score}}
-      <span class="gpa">GPA: {{score}}</span>
-      {{/if}}
       {{#if courses.length}}
-      <br>
       <strong class="courses-header">Courses</strong>
       <ul class="courses">
         {{#each courses}}
