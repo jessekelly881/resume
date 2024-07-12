@@ -14,7 +14,11 @@
         {{#if area}}
           <span class="area">{{area}},</span>
         {{/if}}
-        <span class="institution">{{institution}}</span>
+        {{#if url}}
+          <span class="institution"><a href="{{url}}" target="external">{{institution}}</a></span>
+        {{else}}
+          <span class="institution">{{institution}}</span>
+        {{/if}}
         </h3>
       {{/if}}
       <small class="dates">

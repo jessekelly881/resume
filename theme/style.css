@@ -286,7 +286,8 @@ section.education .item header .name {
   font-size: var(--base-font-size);
 }
 
-section.education .item header .name .institution {
+section.education .item header .name .institution,
+section.education .item header .name .institution a {
   color: var(--grey)
 }
 
