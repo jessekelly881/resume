@@ -7,7 +7,7 @@
   --text-color: #222;
   --grey: #71717a; /* zinc-500 */
   --white:#FFFFFF;
-  --base-font-size: 12.5pt;
+  --base-font-size: 12pt;
   --spacing-double: 1rem;
   --spacing-small: .1rem;
   --spacing: .3rem;
@@ -209,7 +209,7 @@ section.experience .item .position {
   margin: var(--spacing-small) 0;
 }
 
-section.experience .item .position .name a {
+section.experience .item .position .name, section.experience .item .position .name a {
   color: var(--grey);
 }
 

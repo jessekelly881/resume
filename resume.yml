@@ -18,15 +18,20 @@ basics:
 education:
     - institution: The Ohio State University
       url: https://www.osu.edu/
-      area: Mathematics
+      area: Abstract Mathematics
       studyType: B.A.
       startDate: "2014-09-01"
       endDate: "2017-06-01"
-      courses:
-        - |
-          Mathematical Statistics I,II: Gained expertise in advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Utilized <em>R</em> and <em>Matlab</em> for data analysis.
 
 work:
+    - name: "EventMind"
+      position: "Lead Full Stack Engineer"
+      startDate: "2023-06-01"
+      highlights:
+        - "Managed all aspects of development, from architectural decisions to final implementation, ensuring a unified and efficient platform."
+        - "Led the design and implementation of a scalable backend using Supabase and developed a cohesive, responsive user interface with React Native, ensuring a consistent and robust platform."
+        - "Integrated backend and frontend components seamlessly, applying advanced TypeScript techniques with Effect-TS to enhance functionality and code reliability."
+
     - name: ProjectDiscovery.io
       company: ProjectDiscovery.io
       url: https://projectdiscovery.io
@@ -38,7 +43,6 @@ work:
         - Served as the technical lead and software architect for a web development team of approximately 4 engineers, advising other technical teams.
         - Implemented robust <em>CI/CD</em> pipelines using <em>GitHub Actions</em> and <em>Vercel</em>, streamlining deployment processes and integrating <em>Docker</em> and <em>Kubernetes</em> for containerization and orchestration.
         - Enhanced website and application reliability, security, and user experience by promoting the adoption of <em>Typescript</em>, <em>Test Driven Development</em> techniques, and <em>Functional Programming</em>.
-        - Developed successful and impactful applications using <em>Typescript</em>, <em>React</em>, <em>fp-ts</em>, <em>Effect-ts</em>, <em>Jest</em>, <em>Vitest</em>, and <em>Google Cloud</em>.
 
     - name: Glitzi (YC S21)
       position: Senior Full Stack Engineer 
@@ -61,7 +65,6 @@ work:
       highlights: 
         - Led the development of Reworth's fintech PRM platform, enabling businesses to leverage payment data for targeted cashback offers, enhancing customer retention and sales performance.
         - Optimized backend systems using <em>Python</em> and <em>Django</em> to securely handle large-scale financial transactions, ensuring high performance and data integrity.
-        - Built secure, user-friendly interfaces with <em>React</em> and <em>Typescript</em>, integrating seamlessly with banking apps to improve customer engagement.
         - Developed and maintained fintech web and mobile applications, leveraging AI-driven insights with <em>React</em>, <em>Node.js</em>, and <em>MongoDB</em> to deliver personalized marketing strategies and an enhanced user experience.
 
     - name: Zima
