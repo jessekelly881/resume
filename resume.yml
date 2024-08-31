@@ -29,8 +29,8 @@ work:
       startDate: "2023-06-01"
       highlights:
         - "Managed all aspects of development, from architectural decisions to final implementation, ensuring a unified and efficient platform."
-        - "Led the design and implementation of a scalable backend using Supabase and developed a cohesive, responsive user interface with React Native, ensuring a consistent and robust platform."
-        - "Integrated backend and frontend components seamlessly, applying advanced TypeScript techniques with Effect-TS to enhance functionality and code reliability."
+        - "Led the design and implementation of a scalable backend using <em>Supabase</em> and developed a cohesive, responsive user interface with <em>React Native</em>, ensuring a consistent and robust platform."
+        - "Integrated backend and frontend components seamlessly, applying advanced <em>TypeScript</em> techniques with <em>Effect-TS</em> to enhance functionality and code reliability."
 
     - name: ProjectDiscovery.io
       company: ProjectDiscovery.io
