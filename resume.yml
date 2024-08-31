@@ -50,29 +50,29 @@ work:
         - Implemented security-critical, HIPAA-compliant backend code using <em>Python</em>, <em>Django</em>, <em>Redis</em>, and <em>SQL</em> to handle sensitive patient medical data.
         - Led the front-end development of the telemedicine application, utilizing <em>React</em> and <em>Typescript</em> to create an intuitive and user-friendly interface for patients and healthcare providers.
 
-    - name: Reworth
+    - name: Reworth (formerly Appuntos)
       company: Reworth
-      url: https://www.reworth.app
+      url: https://www.reworth.co/
       position: Senior Full Stack Engineer
       location: Mexico City, MX (Onsite)
-      startDate: "2020-05-01"
+      startDate: "2019-03-01"
       endDate: "2020-09-01"
       highlights: 
-        - Spearheaded the development of a robust and scalable PRM (Payment Relationship Marketing) system, enabling businesses to leverage payment data for customer behavior analysis and personalized marketing strategies.
-        - Developed and optimized backend services using <em>Python</em> and <em>Django</em> to handle large-scale transactional data efficiently, ensuring high performance and reliability.
-        - Engineered front-end solutions with <em>React</em>, <em>Typescript</em>, and <em>Tailwind</em>, delivering intuitive and user-friendly interfaces that facilitated frictionless customer interactions.
+        - Led the development of Reworth's fintech PRM platform, enabling businesses to leverage payment data for targeted cashback offers, enhancing customer retention and sales performance.
+        - Optimized backend systems using <em>Python</em> and <em>Django</em> to securely handle large-scale financial transactions, ensuring high performance and data integrity.
+        - Built secure, user-friendly interfaces with <em>React</em> and <em>Typescript</em>, integrating seamlessly with banking apps to improve customer engagement.
+        - Developed and maintained fintech web and mobile applications, leveraging AI-driven insights with <em>React</em>, <em>Node.js</em>, and <em>MongoDB</em> to deliver personalized marketing strategies and an enhanced user experience.
 
-    - name: Appuntos
-      company: Appuntos
-      url: https://www.linkedin.com/company/appuntos/about/
+    - name: Zima
+      company: Zima
+      url: https://www.facebook.com/zimawebdesign
       position: Full Stack Engineer
-      location: Mexico City, MX (Onsite)
+      location: Remote
+      startDate: "2017-06-01"
+      endDate: "2019-03-01"
       highlights: 
-          - Maintained a legacy <em>Python</em> and <em>Django</em> backend.
-          - Enhanced and maintained Android and iOS applications built with <em>Angular</em>, <em>Capacitor</em>, and <em>Ionic</em>, focusing on adding features, improving test coverage, and ensuring code quality.
-          - Developed new web applications and tools using <em>React</em>, <em>Redux</em>, <em>Node.js</em>, <em>Express</em>, and <em>MongoDB</em>. Leveraged <em>GraphQL</em> for efficient data retrieval and manipulation.
-      startDate: "2019-03-01"
-      endDate: "2020-05-01"
+        - Developed and deployed cross-platform web and mobile applications using <em>AWS</em>, <em>Docker</em>, <em>React</em>, and <em>Ionic</em>, while maintaining an internal <em>Typescript</em> library for rapid development.
+        - Collaborated with clients to deliver MVPs, focusing on performance optimization and meeting specific requirements through <em>PWA</em>s and hybrid apps.
 
 interests: 
     - name: SCUBA Diving

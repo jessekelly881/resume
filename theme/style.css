@@ -12,7 +12,6 @@
   --spacing-small: .1rem;
   --spacing: .3rem;
   --font-size-large: 120%;
-  --color-emphasis: #0e7490 /* cyan-700 */
 }
 @media (min-width: 567px) {
   :root {
@@ -49,7 +48,7 @@ body {
 }
 
 em {
-  color: var(--color-emphasis)
+  color: var(--accent); /* cyan-900 */
 }
 
 p {
@@ -198,9 +197,6 @@ section.experience .item header h3 {
     margin-bottom: var(--spacing-double);
   }
 }
-section.experience .item .summary p {
-  margin-top: var(--spacing);
-}
 section.experience .item .summary p:first-child {
   margin-top: var(--spacing-small);
 }
@@ -255,6 +251,7 @@ section.volunteering .item .position {
 
 section.experience .summary {
   color: var(--grey);
+  font-size: smaller;
   margin-bottom: var(--spacing);
 }
 
@@ -343,7 +340,7 @@ section header h3 {
 }
 
 .courses-header {
-  font-size: 90%;
+  font-size: 80%;
   color: var(--grey)
 }
 
