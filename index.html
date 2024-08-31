@@ -19,7 +19,6 @@
   --spacing-small: .1rem;
   --spacing: .3rem;
   --font-size-large: 120%;
-  --color-emphasis: #0e7490 /* cyan-700 */
 }
 @media (min-width: 567px) {
   :root {
@@ -56,7 +55,7 @@ body {
 }
 
 em {
-  color: var(--color-emphasis)
+  color: var(--accent); /* cyan-900 */
 }
 
 p {
@@ -205,9 +204,6 @@ section.experience .item header h3 {
     margin-bottom: var(--spacing-double);
   }
 }
-section.experience .item .summary p {
-  margin-top: var(--spacing);
-}
 section.experience .item .summary p:first-child {
   margin-top: var(--spacing-small);
 }
@@ -262,6 +258,7 @@ section.volunteering .item .position {
 
 section.experience .summary {
   color: var(--grey);
+  font-size: smaller;
   margin-bottom: var(--spacing);
 }
 
@@ -350,7 +347,7 @@ section header h3 {
 }
 
 .courses-header {
-  font-size: 90%;
+  font-size: 80%;
   color: var(--grey)
 }
 
@@ -498,16 +495,17 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             <div class="subhead">
             <h3 class="position">
               <span class="title">Senior Full Stack Engineer,</span>
-              <span class="name"><a href="https://www.reworth.app" target="external">Reworth</a></span>
+              <span class="name"><a href="https://www.reworth.co/" target="external">Reworth (formerly Appuntos)</a></span>
             </h3>
-            <small class="dates">May 2020
+            <small class="dates">Mar 2019
              - Sep 2020</small>
             </div>
           </header>
           <ul class="highlights">
-            <li>Spearheaded the development of a robust and scalable PRM (Payment Relationship Marketing) system, enabling businesses to leverage payment data for customer behavior analysis and personalized marketing strategies.</li>
-            <li>Developed and optimized backend services using <em>Python</em> and <em>Django</em> to handle large-scale transactional data efficiently, ensuring high performance and reliability.</li>
-            <li>Engineered front-end solutions with <em>React</em>, <em>Typescript</em>, and <em>Tailwind</em>, delivering intuitive and user-friendly interfaces that facilitated frictionless customer interactions.</li>
+            <li>Led the development of Reworth's fintech PRM platform, enabling businesses to leverage payment data for targeted cashback offers, enhancing customer retention and sales performance.</li>
+            <li>Optimized backend systems using <em>Python</em> and <em>Django</em> to securely handle large-scale financial transactions, ensuring high performance and data integrity.</li>
+            <li>Built secure, user-friendly interfaces with <em>React</em> and <em>Typescript</em>, integrating seamlessly with banking apps to improve customer engagement.</li>
+            <li>Developed and maintained fintech web and mobile applications, leveraging AI-driven insights with <em>React</em>, <em>Node.js</em>, and <em>MongoDB</em> to deliver personalized marketing strategies and an enhanced user experience.</li>
           </ul>
         </section>
         <section class="item">
@@ -515,16 +513,15 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             <div class="subhead">
             <h3 class="position">
               <span class="title">Full Stack Engineer,</span>
-              <span class="name"><a href="https://www.linkedin.com/company/appuntos/about/" target="external">Appuntos</a></span>
+              <span class="name"><a href="https://www.facebook.com/zimawebdesign" target="external">Zima</a></span>
             </h3>
-            <small class="dates">Mar 2019
-             - May 2020</small>
+            <small class="dates">Jun 2017
+             - Mar 2019</small>
             </div>
           </header>
           <ul class="highlights">
-            <li>Maintained a legacy <em>Python</em> and <em>Django</em> backend.</li>
-            <li>Enhanced and maintained Android and iOS applications built with <em>Angular</em>, <em>Capacitor</em>, and <em>Ionic</em>, focusing on adding features, improving test coverage, and ensuring code quality.</li>
-            <li>Developed new web applications and tools using <em>React</em>, <em>Redux</em>, <em>Node.js</em>, <em>Express</em>, and <em>MongoDB</em>. Leveraged <em>GraphQL</em> for efficient data retrieval and manipulation.</li>
+            <li>Developed and deployed cross-platform web and mobile applications using <em>AWS</em>, <em>Docker</em>, <em>React</em>, and <em>Ionic</em>, while maintaining an internal <em>Typescript</em> library for rapid development.</li>
+            <li>Collaborated with clients to deliver MVPs, focusing on performance optimization and meeting specific requirements through <em>PWA</em>s and hybrid apps.</li>
           </ul>
         </section>
       </section>
