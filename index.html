@@ -14,7 +14,7 @@
   --text-color: #222;
   --grey: #71717a; /* zinc-500 */
   --white:#FFFFFF;
-  --base-font-size: 12.5pt;
+  --base-font-size: 12pt;
   --spacing-double: 1rem;
   --spacing-small: .1rem;
   --spacing: .3rem;
@@ -216,7 +216,7 @@ section.experience .item .position {
   margin: var(--spacing-small) 0;
 }
 
-section.experience .item .position .name a {
+section.experience .item .position .name, section.experience .item .position .name a {
   color: var(--grey);
 }
 
@@ -461,6 +461,23 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             <div class="subhead">
             <h3 class="position">
               <span class="title">Lead Full Stack Engineer,</span>
+              <span class="name">EventMind</span>
+            </h3>
+            <small class="dates">Jun 2023
+             - Present</small>
+            </div>
+          </header>
+          <ul class="highlights">
+            <li>Managed all aspects of development, from architectural decisions to final implementation, ensuring a unified and efficient platform.</li>
+            <li>Led the design and implementation of a scalable backend using Supabase and developed a cohesive, responsive user interface with React Native, ensuring a consistent and robust platform.</li>
+            <li>Integrated backend and frontend components seamlessly, applying advanced TypeScript techniques with Effect-TS to enhance functionality and code reliability.</li>
+          </ul>
+        </section>
+        <section class="item">
+          <header>
+            <div class="subhead">
+            <h3 class="position">
+              <span class="title">Lead Full Stack Engineer,</span>
               <span class="name"><a href="https://projectdiscovery.io" target="external">ProjectDiscovery.io</a></span>
             </h3>
             <small class="dates">May 2021
@@ -471,7 +488,6 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             <li>Served as the technical lead and software architect for a web development team of approximately 4 engineers, advising other technical teams.</li>
             <li>Implemented robust <em>CI/CD</em> pipelines using <em>GitHub Actions</em> and <em>Vercel</em>, streamlining deployment processes and integrating <em>Docker</em> and <em>Kubernetes</em> for containerization and orchestration.</li>
             <li>Enhanced website and application reliability, security, and user experience by promoting the adoption of <em>Typescript</em>, <em>Test Driven Development</em> techniques, and <em>Functional Programming</em>.</li>
-            <li>Developed successful and impactful applications using <em>Typescript</em>, <em>React</em>, <em>fp-ts</em>, <em>Effect-ts</em>, <em>Jest</em>, <em>Vitest</em>, and <em>Google Cloud</em>.</li>
           </ul>
         </section>
         <section class="item">
@@ -505,7 +521,6 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           <ul class="highlights">
             <li>Led the development of Reworth's fintech PRM platform, enabling businesses to leverage payment data for targeted cashback offers, enhancing customer retention and sales performance.</li>
             <li>Optimized backend systems using <em>Python</em> and <em>Django</em> to securely handle large-scale financial transactions, ensuring high performance and data integrity.</li>
-            <li>Built secure, user-friendly interfaces with <em>React</em> and <em>Typescript</em>, integrating seamlessly with banking apps to improve customer engagement.</li>
             <li>Developed and maintained fintech web and mobile applications, leveraging AI-driven insights with <em>React</em>, <em>Node.js</em>, and <em>MongoDB</em> to deliver personalized marketing strategies and an enhanced user experience.</li>
           </ul>
         </section>
@@ -532,7 +547,7 @@ section.experience .item header .subhead, section.volunteering .item header .sub
           <header>
               <h3 class="name">
                 <span class="studyType">B.A.</span>
-                <span class="area">Mathematics,</span>
+                <span class="area">Abstract Mathematics,</span>
                 <span class="institution"><a href="https://www.osu.edu/" target="external">The Ohio State University</a></span>
               </h3>
             <small class="dates">
@@ -541,11 +556,6 @@ section.experience .item header .subhead, section.volunteering .item header .sub
             </small>
           </header>
           <div class="qualification">
-            <strong class="courses-header">Courses</strong>
-            <ul class="courses">
-              <li>Mathematical Statistics I,II: Gained expertise in advanced statistical methods including Confidence Intervals, Regression Analysis, and ANOVA Tests. Utilized <em>R</em> and <em>Matlab</em> for data analysis.
-      </li>
-            </ul>
           </div>
         </div>
         <br />
