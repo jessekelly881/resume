@@ -213,6 +213,10 @@ section.experience .item .position .name, section.experience .item .position .na
   color: var(--grey);
 }
 
+.issuer {
+  color: var(--grey);
+}
+
 .item .dates {
   color: var(--grey)
 }
@@ -363,7 +367,13 @@ section.experience .item, section.volunteering .item, section.projects .item, se
   }
 } */
 
-section.experience .item header .subhead, section.volunteering .item header .subhead, section.projects .item header, section.education .item header, section.awards .item header, section.publications .item .subhead {
+section.experience .item header .subhead, 
+section.volunteering .item header .subhead, 
+section.certificates .item header, 
+section.projects .item header, 
+section.education .item header, 
+section.awards .item header, 
+section.publications .item .subhead {
   align-items: baseline;
   display: flex;
   align-items: center;

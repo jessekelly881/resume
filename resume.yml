@@ -23,6 +23,12 @@ education:
       startDate: "2014-09-01"
       endDate: "2017-06-01"
 
+certificates:
+  - name: Foundations of User Experience (UX) Design
+    url: https://www.coursera.org/account/accomplishments/verify/5ZEMXT25DVAK
+    date: "2023-11-01"
+    issuer: Google
+
 work:
     - name: "EventMind"
       position: "Lead Full Stack Engineer"
@@ -75,8 +81,7 @@ work:
       startDate: "2017-06-01"
       endDate: "2019-03-01"
       highlights: 
-        - Developed and deployed cross-platform web and mobile applications using <em>AWS</em>, <em>Docker</em>, <em>React</em>, and <em>Ionic</em>, while maintaining an internal <em>Typescript</em> library for rapid development.
-        - Collaborated with clients to deliver MVPs, focusing on performance optimization and meeting specific requirements through <em>PWA</em>s and hybrid apps.
+        - Delivered numerous MVPs and final products utilizing a diverse tech stack, including AWS, Docker, React, and Ionic, while collaborating closely with clients to meet their specific needs.
 
 interests: 
     - name: SCUBA Diving

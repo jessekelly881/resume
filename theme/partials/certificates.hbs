@@ -1,0 +1,22 @@
+{{#if resume.certificates.length}}
+<section id="certificates" class="certificates">
+  {{#each resume.certificates}}
+  <div class="item">
+    {{#if @first}}
+    <h2>Licenses & Certifications</h2>
+    {{/if}}
+    <header>
+      {{#if name}}
+      <div class="title">
+       {{#if url}}<a href="{{ url }}">{{name}}</a>{{else}}{{ name }}{{/if}}, {{#if issuer}}<span class="issuer">{{issuer}}</span>{{/if}}
+        </div>
+      {{/if}}
+      {{#if date}}
+      <small class="dates">{{date date}}</small>
+      {{/if}}
+    </header>
+  </div>
+  {{/each}}
+</section>
+<br />
+{{/if}}
