@@ -18,7 +18,7 @@ basics:
 education:
     - institution: The Ohio State University
       url: https://www.osu.edu/
-      area: Abstract Mathematics
+      area: Mathematics
       studyType: B.A.
       startDate: "2014-09-01"
       endDate: "2017-06-01"
@@ -81,7 +81,7 @@ work:
       startDate: "2017-06-01"
       endDate: "2019-03-01"
       highlights: 
-        - Delivered numerous MVPs and final products utilizing a diverse tech stack, including AWS, Docker, React, and Ionic, while collaborating closely with clients to meet their specific needs.
+        - Delivered numerous MVPs and final products utilizing a diverse tech stack, including <em>AWS</em>, <em>Docker</em>, <em>React</em>, and <em>Ionic</em>, while collaborating closely with clients to meet their specific needs.
 
 interests: 
     - name: SCUBA Diving
