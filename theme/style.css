@@ -10,7 +10,7 @@
   --base-font-size: 12pt;
   --spacing-double: 1rem;
   --spacing-small: .1rem;
-  --spacing: .3rem;
+  --spacing: .25rem;
   --font-size-large: 120%;
 }
 @media (min-width: 567px) {
